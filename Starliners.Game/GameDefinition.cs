@@ -193,6 +193,11 @@ namespace Starliners {
         }
 
         public bool HandleKeyboardShortcut (KeysU key) {
+            // We have nothing to do if we are not actually in game.
+            if (!GameAccess.Interface.IsInGame) {
+                return false;
+            }
+
             switch (key) {
                 case KeysU.H:
                     GameAccess.Interface.Controller.RequestAction (RequestIds.OpenHistory);
