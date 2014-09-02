@@ -70,7 +70,7 @@ namespace BLibrary.Gui.Interface {
 
             Vect2i linespacing = new Vect2i (0, 24);
 
-            _name = new Label (new Vect2i (margin, margin), "--");
+            _name = new Label (new Vect2i (margin, margin), new Vect2i (infobox.Size.X - 2 * margin, 24), "--");
             infobox.AddWidget (_name);
             _version = new Label (new Vect2i (margin, margin) + linespacing, string.Empty);
             infobox.AddWidget (_version);
