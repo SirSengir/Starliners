@@ -1,0 +1,22 @@
+﻿[
+    {
+        "name": "shipyards",
+        "weight": 10
+    },
+    {
+        "name": "logistics",
+        "weight": 50
+    },
+    {
+        "name": "weaponeers",
+        "weight": 100
+    },
+    {
+        "name": "mining",
+        "weight": 150
+    },
+    {
+        "name": "academies",
+        "weight": 200
+    }
+]

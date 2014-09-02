@@ -1,0 +1,26 @@
+﻿[
+    {
+        "name": "republic",
+        "fullName": "Republican Coalition",
+        "fleetStyle": "Revolutionary Fleet",
+        "colours": {
+            "empire": "56d600",
+            "hulks": "56d600",
+            "shields": "00ffff",
+            "weapons": "d400d6",
+        },
+        "blazon": {
+            "colour0": "ffffff",
+            "colour1": "56d600",
+            "colour2": "ffffff",
+            "pattern": "horizontal",
+            "heraldic": "stars1"
+        },
+        "flags": [
+            "rebel"
+        ],
+        "cultures": [
+            "imperial"
+        ]
+    }
+]

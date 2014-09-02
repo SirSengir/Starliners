@@ -1,0 +1,56 @@
+﻿{
+    "assets": [
+        {
+            "file": "Starliners.exe",
+            "compressed": true
+        },
+        {
+            "file": "Starliners.Dedicated.exe",
+            "compressed": true
+        },
+        {
+            "file": "Starliners.Game.dll",
+            "compressed": true
+        },
+        {
+            "file": "Starliners.Data.dll",
+            "compressed": true
+        },
+        {
+            "file": "Starliners.Resources.dll",
+            "compressed": true
+        },
+        {
+            "file": "OpenTK.dll",
+            "compressed": true
+        },
+        {
+            "file": "OpenTK.dll.config",
+            "compressed": true
+        },
+        {
+            "file": "QuickFont.dll",
+            "compressed": true
+        },
+        {
+            "file": "DragonOgg.dll",
+            "compressed": true
+        },
+        {
+            "file": "openal32.dll",
+            "natives": {
+                "windows": "openal32.dll"
+            }
+        },
+        {
+            "file": "Starliners.Resources.tar",
+            "type": "extra",
+            "compressed": true
+        },
+        {
+            "file": "Starliners.Data.tar",
+            "type": "extra",
+            "compressed": true
+        }
+    ]
+}

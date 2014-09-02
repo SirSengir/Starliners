@@ -1,0 +1,86 @@
+﻿[
+    {
+        "name": "destroyer0-H0",
+        "icon": "destroyer0",
+        "size": "destroyer",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceHeat",
+                "minimum": 1
+            }
+        ],
+        "manouver": 5000,
+        "tracking": 5000,
+        "weapons": {
+            "heat": 200,
+            "kinetic": 0,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 2000,
+            "shield": 2000,
+            "hull": 2000
+        }
+    },
+    {
+        "name": "destroyer0-K0",
+        "icon": "destroyer0",
+        "size": "destroyer",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceKinetic",
+                "minimum": 1
+            }
+        ],
+        "manouver": 5000,
+        "tracking": 5000,
+        "weapons": {
+            "heat": 0,
+            "kinetic": 200,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 2000,
+            "shield": 2000,
+            "hull": 2000
+        }
+    },
+    {
+        "name": "destroyer0-R0",
+        "icon": "destroyer0",
+        "size": "destroyer",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceRadiation",
+                "minimum": 1
+            }
+        ],
+        "manouver": 5000,
+        "tracking": 5000,
+        "weapons": {
+            "heat": 0,
+            "kinetic": 0,
+            "radioactive": 200
+        },
+        "structure":  {
+            "armour": 2000,
+            "shield": 2000,
+            "hull": 2000
+        }
+    }
+]

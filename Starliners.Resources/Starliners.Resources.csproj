@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{7BF503E8-BA4D-46C0-9087-6B091C09CBAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Starliners.Resources</RootNamespace>
+    <AssemblyName>Starliners.Resources</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Sounds\" />
+    <Folder Include="Resources\Music\" />
+    <Folder Include="Resources\Textures\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="Meta\" />
+    <Folder Include="Resources\Styling\" />
+    <Folder Include="Resources\Textures\Stitchable\Ships\" />
+    <Folder Include="Resources\Textures\Stitchable\Projectiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sounds\Break.ogg" />
+    <EmbeddedResource Include="Resources\Sounds\CREDITS.txt" />
+    <EmbeddedResource Include="Resources\Sounds\Click.ogg" />
+    <EmbeddedResource Include="Resources\Sounds\Grow.ogg" />
+    <EmbeddedResource Include="Resources\Sounds\Harvest.ogg" />
+    <EmbeddedResource Include="Resources\Sounds\Money0.ogg" />
+    <EmbeddedResource Include="Resources\Sounds\Money1.ogg" />
+    <EmbeddedResource Include="Resources\Sounds\Notification.ogg" />
+    <EmbeddedResource Include="Resources\Textures\Effects\Light.png" />
+    <EmbeddedResource Include="Resources\Textures\Map\Default.png" />
+    <EmbeddedResource Include="Resources\Textures\Menus\Loading\001.png" />
+    <EmbeddedResource Include="Resources\Textures\Menus\Main\001.png" />
+    <EmbeddedResource Include="Resources\Textures\Menus\Startup\001.png" />
+    <EmbeddedResource Include="Resources\Textures\Splashes\_Default.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Achievements.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Achievements.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\BgTest.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Blazons.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Blazons.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Dummy.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiButton.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiButtonDisabled.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiButtonHover.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiButtonMenu.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiButtonMenuDisabled.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiButtonMenuHover.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiButtonMenuPressed.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiButtonPressed.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiCheckbox.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiControl.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiControlHover.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiControlPressed.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiGauge.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiInputActive.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiInputInactive.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiInset.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiProgress.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiScale.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiScrollbar.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiScrollbarSlider.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiShadow.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiSlotDefault.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiSlotDefaultHighlight.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiSlotHex.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiSlotHexHighlight.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiSlotToken.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiWindow.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiWindowFlat.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiWindowHeader.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\GuiWindowHeaderDragged.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Missing.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\StackFrame.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Symbols.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Symbols.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\ToolbarProgress.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\TooltipHeader.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\TooltipSingle.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Aquatic0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Aquatic1.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Aquatic2.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid1.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid2.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Barren0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Gaseous0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Gaseous1.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Primordial0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Swamp0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Swamp1.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Swamp2.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Entitystatus.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Entitystatus.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold\Sansation_10_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold\Sansation_10_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold\Sansation_13_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold\Sansation_13_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold\Sansation_16_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold\Sansation_16_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic\Sansation_10_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic\Sansation_10_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic\Sansation_13_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic\Sansation_13_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic\Sansation_16_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic\Sansation_16_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic_Underline\Sansation_10_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic_Underline\Sansation_10_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic_Underline\Sansation_13_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic_Underline\Sansation_13_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic_Underline\Sansation_16_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Italic_Underline\Sansation_16_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Underline\Sansation_10_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Underline\Sansation_10_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Underline\Sansation_13_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Underline\Sansation_13_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Underline\Sansation_16_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Bold_Underline\Sansation_16_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Italic\Sansation_10_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Italic\Sansation_10_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Italic\Sansation_13_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Italic\Sansation_13_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Italic\Sansation_16_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Italic\Sansation_16_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Italic_Underline\Sansation_10_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Italic_Underline\Sansation_10_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Italic_Underline\Sansation_13_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Italic_Underline\Sansation_13_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Italic_Underline\Sansation_16_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Italic_Underline\Sansation_16_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Regular\Sansation_10_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Regular\Sansation_10_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Regular\Sansation_13_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Regular\Sansation_13_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Regular\Sansation_16_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Regular\Sansation_16_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_10.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_10.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_10_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_10_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_12.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_12.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_13_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_13_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_14.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_14.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_16.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_16.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_16_5.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_16_5.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_18.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_18.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_20.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_20.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_21.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_21.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_6.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_6.qfont" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_8.png" />
+    <EmbeddedResource Include="Resources\Fonts\Underline\Sansation_8.qfont" />
+    <EmbeddedResource Include="Meta\Plugin.json" />
+    <EmbeddedResource Include="Resources\Icon.ico" />
+    <EmbeddedResource Include="Resources\Icon.png" />
+    <EmbeddedResource Include="Resources\Styling\Backgrounds\_Common.json" />
+    <EmbeddedResource Include="Resources\Styling\Windows\_Common.json" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Terran0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Terran1.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Terran2.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Fleet4.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Starfield0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Starfield1.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Starfield3.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Fleet4.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Frigate0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Destroyer0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Cruiser0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Battleship0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Dreadnought0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Battleship0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Cruiser0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Destroyer0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Dreadnought0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Ships\Frigate0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Battlefield0.png" />
+    <EmbeddedResource Include="Resources\Sounds\Laser0.ogg" />
+    <EmbeddedResource Include="Resources\Sounds\Laser1.ogg" />
+    <EmbeddedResource Include="Resources\Sounds\Laser2.ogg" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Projectiles\ImpactHull0.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Projectiles\ImpactShield0.png" />
+    <EmbeddedResource Include="Resources\Textures\Map\Nebulae0.png" />
+    <EmbeddedResource Include="Resources\Textures\Map\Nebulae1.png" />
+    <EmbeddedResource Include="Resources\Textures\Map\Nebulae2.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Projectiles\ImpactHull1.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Projectiles\ImpactHull2.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Projectiles\ImpactHull3.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Projectiles\ImpactHull4.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Projectiles\Heat.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Projectiles\Kinetic.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Projectiles\Radiation.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolFHeat.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolFKinetic.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolRHeat.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolRKinetic.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolFRadiation.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolRRadiation.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolElite.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolMilitia.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolRegular.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolVeteran.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolFleet.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolHeat.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolKinetic.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolRadioactive.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolAcademies.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolLogistics.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolMining.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolYardBattleship.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolYardCruiser.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolYardDestroyer.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolYardDreadnought.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolYardFrigate.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Aquatic0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Aquatic3.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid3.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid4.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid5.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Swamp3.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Terran3.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Aquatic1.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Aquatic2.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Aquatic3.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid1.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid2.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid3.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid4.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Arid5.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Barren0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Gaseous0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Gaseous1.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Primordial0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Swamp0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Swamp1.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Swamp2.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Swamp3.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Terran0.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Terran1.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Terran2.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Planets\Terran3.icons" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolSupArmour.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolSupHull.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\SymbolSupShield.png" />
+    <EmbeddedResource Include="Resources\Textures\Stitchable\Gui\Banner0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

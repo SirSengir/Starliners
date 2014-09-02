@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88CF1C97-BD17-45DC-8BB4-5CB144D88390}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Starliners</RootNamespace>
+    <AssemblyName>Starliners.Game</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AssetKeys.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="FactionFlags.cs" />
+    <Compile Include="GameAccess.cs" />
+    <Compile Include="GameConnection.cs" />
+    <Compile Include="GameCore.cs" />
+    <Compile Include="GameDefinition.cs" />
+    <Compile Include="GameSimulator.cs" />
+    <Compile Include="GuiIds.cs" />
+    <Compile Include="IAccessInterface.cs" />
+    <Compile Include="IAccessSimulator.cs" />
+    <Compile Include="IGameDefinition.cs" />
+    <Compile Include="IGameState.cs" />
+    <Compile Include="ImprovementFlags.cs" />
+    <Compile Include="IScenarioProvider.cs" />
+    <Compile Include="LaunchDefinition.cs" />
+    <Compile Include="NotificationCategories.cs" />
+    <Compile Include="ParameterKeys.cs" />
+    <Compile Include="PermissionKeys.cs" />
+    <Compile Include="RequestIds.cs" />
+    <Compile Include="RunningState.cs" />
+    <Compile Include="SettingsManager.cs" />
+    <Compile Include="SoundKeys.cs" />
+    <Compile Include="TooltipIds.cs" />
+    <Compile Include="Game\Asset.cs" />
+    <Compile Include="Game\AssetHolder.cs" />
+    <Compile Include="Game\AssetKeyMap.cs" />
+    <Compile Include="Game\Blazon.cs" />
+    <Compile Include="Game\Blueprint.cs" />
+    <Compile Include="Game\Bookkeeping.cs" />
+    <Compile Include="Game\ColourScheme.cs" />
+    <Compile Include="Game\CommandToken.cs" />
+    <Compile Include="Game\CostCalculator.cs" />
+    <Compile Include="Game\Culture.cs" />
+    <Compile Include="Game\Entity.cs" />
+    <Compile Include="Game\EntityStatus.cs" />
+    <Compile Include="Game\Eponym.cs" />
+    <Compile Include="Game\Faction.cs" />
+    <Compile Include="Game\FactionPreset.cs" />
+    <Compile Include="Game\FactionRelation.cs" />
+    <Compile Include="Game\FleetComposition.cs" />
+    <Compile Include="Game\GameClock.cs" />
+    <Compile Include="Game\HistoryTracker.cs" />
+    <Compile Include="Game\IChunkObserver.cs" />
+    <Compile Include="Game\IDescribable.cs" />
+    <Compile Include="Game\IdList.cs" />
+    <Compile Include="Game\IDObject.cs" />
+    <Compile Include="Game\IFleetBacker.cs" />
+    <Compile Include="Game\IHeralded.cs" />
+    <Compile Include="Game\IHoldable.cs" />
+    <Compile Include="Game\IIncident.cs" />
+    <Compile Include="Game\ILevyProvider.cs" />
+    <Compile Include="Game\ILocatable.cs" />
+    <Compile Include="Game\IMapGenerator.cs" />
+    <Compile Include="Game\IMobile.cs" />
+    <Compile Include="Game\INavPoint.cs" />
+    <Compile Include="Game\InteractionGui.cs" />
+    <Compile Include="Game\InteractionHandler.cs" />
+    <Compile Include="Game\InteractionPlanet.cs" />
+    <Compile Include="Game\IPopulator.cs" />
+    <Compile Include="Game\IWorldAccess.cs" />
+    <Compile Include="Game\IWorldEditor.cs" />
+    <Compile Include="Game\Movement.cs" />
+    <Compile Include="Game\ObjectCategory.cs" />
+    <Compile Include="Game\ParameterOptions.cs" />
+    <Compile Include="Game\Particle.cs" />
+    <Compile Include="Game\Pathing.cs" />
+    <Compile Include="Game\Player.cs" />
+    <Compile Include="Game\PlayerTarget.cs" />
+    <Compile Include="Game\ProgressInfo.cs" />
+    <Compile Include="Game\ScenarioProvider.cs" />
+    <Compile Include="Game\ScoreKeeper.cs" />
+    <Compile Include="Game\SerializeableObject.cs" />
+    <Compile Include="Game\StateObject.cs" />
+    <Compile Include="Game\StatsRecorder.cs" />
+    <Compile Include="Game\TickType.cs" />
+    <Compile Include="Game\Trigger.cs" />
+    <Compile Include="Game\TriggerAttribute.cs" />
+    <Compile Include="Game\TriggerBuilding.cs" />
+    <Compile Include="Game\TriggerConditional.cs" />
+    <Compile Include="Game\TriggerCulture.cs" />
+    <Compile Include="Game\WorldData.cs" />
+    <Compile Include="Game\WorldHolder.cs" />
+    <Compile Include="Game\WorldInfo.cs" />
+    <Compile Include="Game\WorldSimulator.cs" />
+    <Compile Include="Game\Forces\Battle.cs" />
+    <Compile Include="Game\Forces\BattleGrid.cs" />
+    <Compile Include="Game\Forces\BattleReport.cs" />
+    <Compile Include="Game\Forces\BattleResolution.cs" />
+    <Compile Include="Game\Forces\DamageReport.cs" />
+    <Compile Include="Game\Forces\EntityFleet.cs" />
+    <Compile Include="Game\Forces\Fleet.cs" />
+    <Compile Include="Game\Forces\FleetRelocator.cs" />
+    <Compile Include="Game\Forces\FleetState.cs" />
+    <Compile Include="Game\Forces\Levy.cs" />
+    <Compile Include="Game\Forces\LevyState.cs" />
+    <Compile Include="Game\Forces\Penetration.cs" />
+    <Compile Include="Game\Forces\Resists.cs" />
+    <Compile Include="Game\Forces\Salvo.cs" />
+    <Compile Include="Game\Forces\ShipClass.cs" />
+    <Compile Include="Game\Forces\ShipInstance.cs" />
+    <Compile Include="Game\Forces\ShipLevel.cs" />
+    <Compile Include="Game\Forces\ShipModifiers.cs" />
+    <Compile Include="Game\Forces\ShipProjector.cs" />
+    <Compile Include="Game\Forces\ShipProperties.cs" />
+    <Compile Include="Game\Forces\ShipReport.cs" />
+    <Compile Include="Game\Forces\ShipSize.cs" />
+    <Compile Include="Game\Forces\ShipState.cs" />
+    <Compile Include="Game\Forces\Volley.cs" />
+    <Compile Include="Game\Invasions\Invader.cs" />
+    <Compile Include="Game\Invasions\InvasionBacker.cs" />
+    <Compile Include="Game\Invasions\InvasionSpawner.cs" />
+    <Compile Include="Game\Notifications\AutoAction.cs" />
+    <Compile Include="Game\Notifications\Notification.cs" />
+    <Compile Include="Game\Notifications\NotificationCategory.cs" />
+    <Compile Include="Game\Notifications\NotificationHandling.cs" />
+    <Compile Include="Game\Notifications\NotificationManager.cs" />
+    <Compile Include="Game\Notifications\NotificationSettings.cs" />
+    <Compile Include="Game\Planets\BuildingSector.cs" />
+    <Compile Include="Game\Planets\EntityPlanet.cs" />
+    <Compile Include="Game\Planets\Improvement.cs" />
+    <Compile Include="Game\Planets\Orbit.cs" />
+    <Compile Include="Game\Planets\Planet.cs" />
+    <Compile Include="Game\Planets\PlanetEffects.cs" />
+    <Compile Include="Game\Planets\PlanetState.cs" />
+    <Compile Include="Game\Planets\PlanetType.cs" />
+    <Compile Include="Game\Scenario\AssetCreator.cs" />
+    <Compile Include="Game\Scenario\CreatorBlueprints.cs" />
+    <Compile Include="Game\Scenario\CreatorClassmaps.cs" />
+    <Compile Include="Game\Scenario\CreatorNotifications.cs" />
+    <Compile Include="Game\Scenario\MapGenerator.cs" />
+    <Compile Include="Game\Scenario\ParseableResource.cs" />
+    <Compile Include="Game\Scenario\ParsingFailedException.cs" />
+    <Compile Include="Game\Scenario\Populator.cs" />
+    <Compile Include="Graphics\IRenderable.cs" />
+    <Compile Include="Graphics\IRenderableEntity.cs" />
+    <Compile Include="Graphics\LightModel.cs" />
+    <Compile Include="Graphics\RenderFlags.cs" />
+    <Compile Include="Graphics\RenderHint.cs" />
+    <Compile Include="Graphics\RenderType.cs" />
+    <Compile Include="Graphics\UILayer.cs" />
+    <Compile Include="Graphics\UnhidingBehaviour.cs" />
+    <Compile Include="Gui\ActionHandler.cs" />
+    <Compile Include="Gui\ContainerCreator.cs" />
+    <Compile Include="Gui\KeysActions.cs" />
+    <Compile Include="Gui\KeysFragments.cs" />
+    <Compile Include="Gui\KeysPrecedents.cs" />
+    <Compile Include="Gui\Interface\ContainerBattle.cs" />
+    <Compile Include="Gui\Interface\ContainerBattleReport.cs" />
+    <Compile Include="Gui\Interface\ContainerFleet.cs" />
+    <Compile Include="Gui\Interface\ContainerHistory.cs" />
+    <Compile Include="Gui\Interface\ContainerHud.cs" />
+    <Compile Include="Gui\Interface\ContainerNotifications.cs" />
+    <Compile Include="Gui\Interface\ContainerPlanet.cs" />
+    <Compile Include="Network\NetInterface.cs" />
+    <Compile Include="Network\NetInterfaceClient.cs" />
+    <Compile Include="Network\NetInterfaceServer.cs" />
+    <Compile Include="Network\PacketHandler.cs" />
+    <Compile Include="Network\PacketId.cs" />
+    <Compile Include="Network\Packets\Packet20GuiOpen.cs" />
+    <Compile Include="Network\Packets\Packet21GuiClosed.cs" />
+    <Compile Include="Network\Packets\Packet22GuiData.cs" />
+    <Compile Include="Network\Packets\Packet23GuiAction.cs" />
+    <Compile Include="Network\Packets\Packet24GuiPickup.cs" />
+    <Compile Include="Network\Packets\Packet2ServerInfo.cs" />
+    <Compile Include="Network\Packets\Packet30Content.cs" />
+    <Compile Include="Network\Packets\Packet31World.cs" />
+    <Compile Include="Network\Packets\Packet3Login.cs" />
+    <Compile Include="Network\Packets\Packet42EntityStatus.cs" />
+    <Compile Include="Network\Packets\Packet4MarkPlayer.cs" />
+    <Compile Include="Network\Packets\Packet5Calendar.cs" />
+    <Compile Include="Network\Packets\Packet60ParticleSpawn.cs" />
+    <Compile Include="Network\Packets\Packet6Signal.cs" />
+    <Compile Include="Network\Packets\Packet7Sound.cs" />
+    <Compile Include="Network\Packets\PacketChat.cs" />
+    <Compile Include="Network\Packets\PacketCoords.cs" />
+    <Compile Include="Network\Packets\PacketCoordsClick.cs" />
+    <Compile Include="Network\Packets\PacketSerialized.cs" />
+    <Compile Include="Network\Packets\PacketUID.cs" />
+    <Compile Include="Network\Packets\PacketUIDClick.cs" />
+    <Compile Include="Network\Packets\PacketUpdatePayload.cs" />
+    <Compile Include="Network\Packets\PacketUpdateStream.cs" />
+    <Compile Include="Network\Packets\PacketRequest.cs" />
+    <Compile Include="Network\Packets\PacketAck.cs" />
+    <Compile Include="Network\PacketReader.cs" />
+    <Compile Include="Game\DamageKind.cs" />
+    <Compile Include="Game\CombatProperties.cs" />
+    <Compile Include="Game\Forces\HitType.cs" />
+    <Compile Include="Game\ParticleId.cs" />
+    <Compile Include="Gui\Interface\ContainerElimination.cs" />
+    <Compile Include="Gui\Interface\ContainerChatline.cs" />
+    <Compile Include="Network\ServerCache.cs" />
+    <Compile Include="Game\Forces\PendingShip.cs" />
+    <Compile Include="Game\Forces\ShipRole.cs" />
+    <Compile Include="Game\Forces\Regen.cs" />
+    <Compile Include="Game\Forces\StructureLayer.cs" />
+    <Compile Include="Game\Invasions\WaveDefinition.cs" />
+    <Compile Include="Game\INotifiable.cs" />
+  </ItemGroup>
+  <Import Project="..\BLibrary\BLibrary.projitems" Label="Shared" Condition="Exists('..\BLibrary\BLibrary.projitems')" />
+  <Import Project="..\BLibrary.Gui.Data\BLibrary.Gui.Data.projitems" Label="Shared" Condition="Exists('..\BLibrary.Gui.Data\BLibrary.Gui.Data.projitems')" />
+  <Import Project="..\BLibrary.Json\BLibrary.Json.projitems" Label="Shared" Condition="Exists('..\BLibrary.Json\BLibrary.Json.projitems')" />
+  <Import Project="..\BLibrary.Network\BLibrary.Network.projitems" Label="Shared" Condition="Exists('..\BLibrary.Network\BLibrary.Network.projitems')" />
+  <Import Project="..\BLibrary.Resources\BLibrary.Resources.projitems" Label="Shared" Condition="Exists('..\BLibrary.Resources\BLibrary.Resources.projitems')" />
+  <Import Project="..\BLibrary.Saves\BLibrary.Saves.projitems" Label="Shared" Condition="Exists('..\BLibrary.Saves\BLibrary.Saves.projitems')" />
+  <Import Project="..\BLibrary.Util\BLibrary.Util.projitems" Label="Shared" Condition="Exists('..\BLibrary.Util\BLibrary.Util.projitems')" />
+  <Import Project="..\Starliners.Version\Starliners.Version.projitems" Label="Shared" Condition="Exists('..\Starliners.Version\Starliners.Version.projitems')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

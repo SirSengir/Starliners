@@ -1,0 +1,17 @@
+﻿{
+    "states": [ "navigation", "game" ],
+    "scale" : 32,
+    "icons" :
+    [
+		{
+            "sprite": [
+                0, 1, 2, 3, 4,
+                {
+                    "indices": [5, 6, 7]
+                },
+                8
+            ]
+        }
+	]
+}
+

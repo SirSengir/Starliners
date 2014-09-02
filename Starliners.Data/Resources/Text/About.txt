@@ -1,0 +1,15 @@
+﻿
+§#ffd700§"Starliners - Galactic Empire Implosion Simulator"§%§
+
+(c) 2014 by SirSengir. All rights reserved.
+
+
+§#ffd700§Idea, Design & Programming:
+
+SirSengir
+
+
+Built with "The Open Toolkit" (http://www.opentk.com).
+
+Third-party libraries included in this distribution are governed by different licenses. Please click the button "Licenses" for a complete reproduction of these.
+

@@ -1,0 +1,232 @@
+﻿{
+    "states": [ "navigation", "game" ],
+    "scale" : 32,
+    "icons" :
+    [
+		{
+            "key": "coa.shape.shield",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [0]
+                }
+            ]
+        },
+		{
+            "key": "coa.frame.shield",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [4]
+                }
+            ]
+        },
+		{
+            "key": "coa.shape.circle",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [8]
+                }
+            ]
+        },
+		{
+            "key": "coa.frame.circle",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [12]
+                }
+            ]
+        },
+		{
+            "key": "coa.pattern.vertical",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [128]
+                }
+            ]
+        },
+        {
+            "key": "coa.pattern.quartered",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [132]
+                }
+            ]
+        },
+        {
+            "key": "coa.pattern.horizontal",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [136]
+                }
+            ]
+        },
+        {
+            "key": "coa.pattern.stripe",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [76]
+                }
+            ]
+        },
+        {
+            "key": "coa.pattern.corners0",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [72]
+                }
+            ]
+        },
+        {
+            "key": "coa.pattern.diamond",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [68]
+                }
+            ]
+        },
+        {
+            "key": "coa.pattern.rhombus0",
+            "sprite": [
+                {
+                    "dimensions": [4, 4],
+                    "indices": [64]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.stars0",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [192]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.stars1",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [194]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.stars2",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [196]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.circle",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [198]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.money",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [200]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.cross",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [202]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.maltese",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [204]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.equal",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [206]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.empire",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [224]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.question",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [226]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.triangle",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [228]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.eye",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [230]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.triangles",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [232]
+                }
+            ]
+        },
+        {
+            "key": "coa.heraldic.yinyan",
+            "sprite": [
+                {
+                    "dimensions": [2, 2],
+                    "indices": [234]
+                }
+            ]
+        }
+    ]
+}

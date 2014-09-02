@@ -1,0 +1,8 @@
+﻿{
+	"name": "Starliners Resources (Core)",
+	"uid": "starliners.core.resources",
+	"description": "The core game assets.",
+	"weight": 0,
+	"save": false,
+    "builtin": true
+}

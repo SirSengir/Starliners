@@ -1,0 +1,6 @@
+﻿{
+    "version": "0.1.0.1",
+    "parent": "0.1.0.0",
+    "channel": "starliners",
+    "fileSource": "../../../Starliners/bin/Debug/"
+}

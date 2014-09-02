@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{36AB725C-356B-4B03-9626-9B4C85B09A9A}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BLibrary</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Util\DisposableArray.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\DisposablesCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\IDataReference.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ITextProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\KeysU.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\MathUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Rect2f.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Rect2i.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ReflectionUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\StringUintPair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\StringUlongPair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Vect2d.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Vect2f.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Vect2i.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICrashReporter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IIdObjectAccess.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IIdIdentifiable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LibraryConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\IconLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\IIconRegister.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\ISpriteDeclarant.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\ModelPart.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\ModelReel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameConsole.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globals.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\FieldWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\GameData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\ISerializedLinked.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\MemberWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\PropertyWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SaveMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerialCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerializableIdList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerializableIdObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerializableMember.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerializablePlain.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerializationComposer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\DataFragment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\StringUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Alignment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Colour.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ControlState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Direction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\MoneyFormatter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\SoundDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\TextComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\TextComposition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\IUpdateIndicator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Anchor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerializableIdDictValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerializationUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerializableHashSet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Credentials.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\DataPod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\DataLink.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\StringOtherPair.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Graphics\" />
+  </ItemGroup>
+</Project>

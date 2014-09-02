@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{09338624-A473-47C1-9425-500B3FE83D0C}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BLibrary.Graphics</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Graphics\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Graphics\Sprites\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Graphics\Text\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\BlendMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\BVertex.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Drawable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\IDrawable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Quad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Rectangle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Shader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Texture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Transform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Transformable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\VertexBuffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\View.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\RenderScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\RenderStates.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\RenderTarget.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\RenderTexture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\GlManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\GlWrangler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FontCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FontDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Text\TextBuffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Text\TextFormat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Text\TextNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Text\TextNodeList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Text\TextNodeType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Text\TextTokenized.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\AnimationMapping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\AtlasStitcher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\IconMapping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\SpriteAtlas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\SpriteBatch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\SpriteManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\SpriteModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\SpriteState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\Stitchable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\Sprite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\IDisplayWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprites\AnimationClock.cs" />
+  </ItemGroup>
+</Project>

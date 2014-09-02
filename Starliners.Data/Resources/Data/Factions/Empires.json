@@ -1,0 +1,202 @@
+﻿[
+    {
+        "name": "empire0",
+        "fullName": "Eternal Empire",
+        "fleetStyle": "Imperial Fleet",
+        "colours": {
+            "empire": "2b65ec",
+            "hulks": "2b65ec",
+            "shields": "00ffff",
+            "weapons": "ffb6c1",
+        },
+        "blazon": {
+            "colour0": "dc143c",
+            "colour1": "dc143c",
+            "colour2": "ffffff",
+            "pattern": "quartered",
+            "heraldic": "empire"
+        },
+        "flags": [
+            "empire",
+            "empire0"
+        ],
+        "cultures": [
+            "imperial"
+        ]
+    },
+    {
+        "name": "empire1",
+        "fullName": "Federate Dukedoms",
+        "fleetStyle": "Ducal Fleet",
+        "colours": {
+            "empire": "e62720",
+            "hulks": "e62720",
+            "shields": "00ffff",
+            "weapons": "ffb6c1",
+        },
+        "blazon": {
+            "colour0": "dc143c",
+            "colour1": "dc143c",
+            "colour2": "ffffff",
+            "pattern": "quartered",
+            "heraldic": "stars0"
+        },
+        "flags": [
+            "empire",
+            "empire1"
+        ],
+        "cultures": [
+            "imperial"
+        ]
+    },
+    {
+        "name": "empire2",
+        "fullName": "Merchant Coalition",
+        "fleetStyle": "Mercantile Fleet",
+        "colours": {
+            "empire": "60e620",
+            "hulks": "60e620",
+            "shields": "00ffff",
+            "weapons": "ffb6c1",
+        },
+        "blazon": {
+            "colour0": "dc143c",
+            "colour1": "dc143c",
+            "colour2": "ffffff",
+            "pattern": "quartered",
+            "heraldic": "maltese"
+        },
+        "flags": [
+            "empire",
+            "empire2"
+        ],
+        "cultures": [
+            "imperial"
+        ]
+    },
+    {
+        "name": "empire3",
+        "fullName": "Supreme Kingdom",
+        "fleetStyle": "Royal Fleet",
+        "colours": {
+            "empire": "ffe923",
+            "hulks": "ffe923",
+            "shields": "00ffff",
+            "weapons": "ffb6c1",
+        },
+        "blazon": {
+            "colour0": "dc143c",
+            "colour1": "dc143c",
+            "colour2": "ffffff",
+            "pattern": "quartered",
+            "heraldic": "circle"
+        },
+        "flags": [
+            "empire",
+            "empire3"
+        ],
+        "cultures": [
+            "imperial"
+        ]
+    },
+    {
+        "name": "empire4",
+        "fullName": "Indomitable Alliance",
+        "fleetStyle": "Allied Fleet",
+        "colours": {
+            "empire": "32cd72",
+            "hulks": "32cd72",
+            "shields": "00ffff",
+            "weapons": "ffb6c1",
+        },
+        "blazon": {
+            "colour0": "dc143c",
+            "colour1": "dc143c",
+            "colour2": "ffffff",
+            "pattern": "quartered",
+            "heraldic": "triangle"
+        },
+        "flags": [
+            "empire",
+            "empire4"
+        ],
+        "cultures": [
+            "imperial"
+        ]
+    },
+    {
+        "name": "empire5",
+        "fullName": "Confederate Lords",
+        "fleetStyle": "Confederate Fleet",
+        "colours": {
+            "empire": "ff23b7",
+            "hulks": "ff23b7",
+            "shields": "00ffff",
+            "weapons": "ffb6c1",
+        },
+        "blazon": {
+            "colour0": "dc143c",
+            "colour1": "dc143c",
+            "colour2": "ffffff",
+            "pattern": "quartered",
+            "heraldic": "triangles"
+        },
+        "flags": [
+            "empire",
+            "empire5"
+        ],
+        "cultures": [
+            "imperial"
+        ]
+    },
+    {
+        "name": "empire6",
+        "fullName": "Stellar Federation",
+        "fleetStyle": "Federation Fleet",
+        "colours": {
+            "empire": "23f2ff",
+            "hulks": "23f2ff",
+            "shields": "00ffff",
+            "weapons": "ffb6c1",
+        },
+        "blazon": {
+            "colour0": "dc143c",
+            "colour1": "dc143c",
+            "colour2": "ffffff",
+            "pattern": "quartered",
+            "heraldic": "yinyan"
+        },
+        "flags": [
+            "empire",
+            "empire6"
+        ],
+        "cultures": [
+            "imperial"
+        ]
+    },
+    {
+        "name": "empire7",
+        "fullName": "Rimworld Union",
+        "fleetStyle": "United Fleet",
+        "colours": {
+            "empire": "cd7f32",
+            "hulks": "cd7f32",
+            "shields": "00ffff",
+            "weapons": "ffb6c1",
+        },
+        "blazon": {
+            "colour0": "dc143c",
+            "colour1": "dc143c",
+            "colour2": "ffffff",
+            "pattern": "quartered",
+            "heraldic": "eye"
+        },
+        "flags": [
+            "empire",
+            "empire7"
+        ],
+        "cultures": [
+            "imperial"
+        ]
+    },
+]

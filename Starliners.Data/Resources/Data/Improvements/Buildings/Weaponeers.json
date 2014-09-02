@@ -1,0 +1,38 @@
+﻿[
+    {
+        "name": "weaponeer0",
+        "category": "weaponeers",
+        "icon": "symbolHeat",
+        "cost": {
+            "value": 1000
+        },
+        "maximum": 1,
+        "effects": {
+            "CompetenceHeat": 1
+        }
+    },
+    {
+        "name": "weaponeer1",
+        "category": "weaponeers",
+        "icon": "symbolKinetic",
+        "cost": {
+            "value": 1000
+        },
+        "maximum": 1,
+        "effects": {
+            "CompetenceKinetic": 1
+        }
+    },
+    {
+        "name": "weaponeer2",
+        "category": "weaponeers",
+        "icon": "symbolRadioactive",
+        "cost": {
+            "value": 1000
+        },
+        "maximum": 1,
+        "effects": {
+            "CompetenceRadiation": 1
+        }
+    }
+]

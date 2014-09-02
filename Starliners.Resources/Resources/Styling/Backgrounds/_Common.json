@@ -1,0 +1,93 @@
+﻿[
+    {
+        "key": "main",
+        "colour": "4863a0",
+        "shadow": true
+    },
+    {
+        "key": "hud.inactive",
+        "type": "dynamic",
+        "colour": "4863a0",
+        "edges": [
+            "south", "west", "east"
+        ],
+        "shadow": true
+    },
+    {
+        "key": "hud.active",
+        "type": "dynamic",
+		"texture": "guiWindowFlat",
+        "colour": "4863a0",
+        "edges": [
+            "south", "west", "east"
+        ],
+        "shadow": true
+    },
+    {
+        "key": "hud.backing",
+        "type": "dynamic",
+        "colour": "4863a0",
+        "edges": [
+            "south", "west", "east"
+        ],
+        "shadow": true
+    },
+    {
+        "key": "guiControl",
+        "type": "dynamic",
+		"texture": "guiControl",
+        "colour": "4863a0",
+        "shadow": true
+    },
+    {
+        "key": "guiControlHovered",
+        "type": "dynamic",
+		"texture": "guiControlHover",
+        "colour": "4863a0",
+        "shadow": true
+    },
+    {
+        "key": "guiControlPressed",
+        "type": "dynamic",
+		"texture": "guiControlPressed",
+        "colour": "4863a0",
+        "shadow": true
+    },
+    {
+        "key": "tooltip",
+        "colour": "6960ec",
+        "shadow": true
+    },
+    {
+        "key": "notification",
+        "colour": "56a5ec",
+        "shadow": true
+    },
+    {
+        "key": "tag",
+        "colour": "483d8b",
+        "shadow": true
+    },
+    {
+        "key": "prompt",
+        "colour": "2284e6",
+        "shadow": true
+    },
+    {
+        "key": "dialogue",
+        "colour": "39352b",
+        "shadow": true
+    },
+    {
+        "key": "error",
+        "type": "dynamic",
+        "colour": "dc143c",
+        "shadow": true
+    },
+    {
+        "key": "warning",
+        "type": "dynamic",
+        "colour": "daa520",
+        "shadow": true
+    }
+]

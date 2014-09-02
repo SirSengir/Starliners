@@ -1,0 +1,9 @@
+﻿{
+	"name": "Starliners Data (Core)",
+	"uid": "starliners.core.data",
+	"description": "The core game.",
+	"weight": 0,
+	"save": true,
+    "builtin": true,
+	"localizations": [ "Localization", "Ships", "Improvements" ]
+}

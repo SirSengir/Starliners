@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{02E988A4-2542-4113-883E-68AD1E577793}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Starliners</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IInterfaceDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DisplayWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FontManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FontResourcesRepo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IInterfaceState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)KeyboardHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Conversion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Crash\CrashReport.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Crash\CrashReporter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\RendererBlazon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\MenuState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\StartupState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\FlatCanvas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\InterfaceState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\ScreenCanvas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\MapRendering.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IObjectRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IParticleRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ITagRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\MapState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\MapRenderable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\ControlPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\DrawnArea.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\MapControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorldInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\LoadState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\StageRenderSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\LoadStage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\StageConnect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\StageMapInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\StageReceiveSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)States\StageWaitServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\PacketHandlerClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\GuiCreator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)InterfaceDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiHud.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\RendererPlanet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\MapLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\LayerPlanets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\MapInteractive.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\LayerStarfield.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\EffectRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiPlanet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\PlanetViewer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\RendererVessel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\IconVessel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiFleet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\FleetViewer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Map\LayerFleets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiBattle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\TablePopulators.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\MenuPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\MenuClock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiNotifications.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\SlotNotification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiHistory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiBattleReport.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\IconModifiers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Battlefield\BattlefieldViewer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Battlefield\IBattleToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Battlefield\ImpactToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Battlefield\InfoToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Battlefield\SalvoToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Battlefield\ShipSlot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiFactionSelect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiMenu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiJoin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiSquadron.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Tooltips\TooltipShip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\RendererParticles.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiElimination.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiChatline.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiProfile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\LegendPlanet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Util\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Crash\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Graphics\" />
+    <Folder Include="$(MSBuildThisFileDirectory)States\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Map\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Network\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Gui\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Gui\Interface\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Gui\Widgets\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Gui\Tooltips\" />
+  </ItemGroup>
+</Project>

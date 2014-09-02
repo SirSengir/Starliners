@@ -1,0 +1,86 @@
+﻿[
+    {
+        "name": "frigate0-H0",
+        "icon": "frigate0",
+        "size": "frigate",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceHeat",
+                "minimum": 1
+            }
+        ],
+        "manouver": 8000,
+        "tracking": 5000,
+        "weapons": {
+            "heat": 100,
+            "kinetic": 0,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 1000,
+            "shield": 1000,
+            "hull": 1000
+        }
+    },
+    {
+        "name": "frigate0-K0",
+        "icon": "frigate0",
+        "size": "frigate",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceKinetic",
+                "minimum": 1
+            }
+        ],
+        "manouver": 8000,
+        "tracking": 5000,
+        "weapons": {
+            "heat": 0,
+            "kinetic": 100,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 1000,
+            "shield": 1000,
+            "hull": 1000
+        }
+    },
+    {
+        "name": "frigate0-R0",
+        "icon": "frigate0",
+        "size": "frigate",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceRadiation",
+                "minimum": 1
+            }
+        ],
+        "manouver": 8000,
+        "tracking": 5000,
+        "weapons": {
+            "heat": 0,
+            "kinetic": 0,
+            "radioactive": 100
+        },
+        "structure":  {
+            "armour": 1000,
+            "shield": 1000,
+            "hull": 1000
+        }
+    }
+]

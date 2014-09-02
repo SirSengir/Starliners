@@ -1,0 +1,55 @@
+﻿[
+    {
+        "name": "logistics0",
+        "category": "logistics",
+        "icon": "symbolLogistics",
+        "cost": {
+            "value": 1000,
+            "progression": "linear"
+        },
+        "maximum": 10,
+        "effects": {
+            "BuildLogistics": 100
+        }
+    },
+    {
+        "name": "logistics1",
+        "category": "logistics",
+        "icon": "symbolLogistics",
+        "cost": {
+            "value": 1000,
+            "progression": "linear"
+        },
+        "maximum": 10,
+        "trigger": [
+            {
+                "type": "building",
+                "value": "logistics0",
+                "minimum": 10
+            }
+        ],
+        "effects": {
+            "BuildLogistics": 200
+        }
+    },
+    {
+        "name": "logistics2",
+        "category": "logistics",
+        "icon": "symbolLogistics",
+        "cost": {
+            "value": 1000,
+            "progression": "linear"
+        },
+        "maximum": 10,
+        "trigger": [
+            {
+                "type": "building",
+                "value": "logistics1",
+                "minimum": 10
+            }
+        ],
+        "effects": {
+            "BuildLogistics": 400
+        }
+    }
+]

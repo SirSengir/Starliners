@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{05D4ED79-6055-4CF3-B3AF-3BAF3D62403B}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BLibrary</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\AudioResourceFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\IClipContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\ResourceOggFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\SoundChannel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\SoundClip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\SoundCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\SoundManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\SoundScenery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\SoundTask.cs" />
+  </ItemGroup>
+</Project>

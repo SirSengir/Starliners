@@ -1,0 +1,25 @@
+﻿[
+    {
+        "name": "destroyer1-0",
+        "icon": "destroyer0",
+        "size": "destroyer",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "outcast"
+            }
+        ],
+        "manouver": 5000,
+        "tracking": 5000,
+        "weapons": {
+            "heat": 200,
+            "kinetic": 0,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 2000,
+            "shield": 2000,
+            "hull": 2000
+        }
+    }
+]

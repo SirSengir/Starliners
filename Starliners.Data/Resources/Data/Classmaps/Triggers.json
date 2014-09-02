@@ -1,0 +1,22 @@
+﻿[
+    {
+        "category": "trigger",
+        "key": "attribute",
+        "type": "Starliners.Game.TriggerAttribute"
+    },
+    {
+        "category": "trigger",
+        "key": "building",
+        "type": "Starliners.Game.TriggerBuilding"
+    },
+    {
+        "category": "trigger",
+        "key": "conditional",
+        "type": "Starliners.Game.TriggerConditional"
+    },
+    {
+        "category": "trigger",
+        "key": "culture",
+        "type": "Starliners.Game.TriggerCulture"
+    }
+]

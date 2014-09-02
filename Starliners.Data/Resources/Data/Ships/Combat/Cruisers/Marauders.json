@@ -1,0 +1,25 @@
+﻿[
+    {
+        "name": "cruiser1-0",
+        "icon": "cruiser0",
+        "size": "cruiser",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "outcast"
+            }
+        ],
+        "manouver": 1000,
+        "tracking": 2000,
+        "weapons": {
+            "heat": 800,
+            "kinetic": 0,
+            "radiation": 0
+        },
+        "structure":  {
+            "armour": 8000,
+            "shield": 8000,
+            "hull": 8000
+        }
+    }
+]

@@ -1,0 +1,25 @@
+﻿[
+    {
+        "name": "frigate1-0",
+        "icon": "frigate0",
+        "size": "frigate",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "outcast"
+            }
+        ],
+        "manouver": 8000,
+        "tracking": 5000,
+        "weapons": {
+            "heat": 100,
+            "kinetic": 0,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 1000,
+            "shield": 1000,
+            "hull": 1000
+        }
+    }
+]

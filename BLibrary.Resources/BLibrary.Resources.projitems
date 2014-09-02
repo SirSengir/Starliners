@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{A69E5268-6B7A-4960-88B1-19D2E411903F}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BLibrary</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\ArchiveFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\AssemblyFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Localization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\PluginState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\ResourceArchive.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\ResourceAssembly.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\ResourceCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\ResourceFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\ResourceRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\SystemFile.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{D9E7D1B8-597F-4D33-A91F-47BBC15DBDD1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Starliners</RootNamespace>
+    <AssemblyName>Starliners</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <StartupObject>Starliners.Program</StartupObject>
+    <ApplicationIcon>..\Starliners.Resources\Resources\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="..\BLibrary.Graphics\BLibrary.Graphics.projitems" Label="Shared" Condition="Exists('..\BLibrary.Graphics\BLibrary.Graphics.projitems')" />
+  <Import Project="..\Starliners.Frontend\Starliners.Frontend.projitems" Label="Shared" Condition="Exists('..\Starliners.Frontend\Starliners.Frontend.projitems')" />
+  <Import Project="..\BLibrary.Audio\BLibrary.Audio.projitems" Label="Shared" Condition="Exists('..\BLibrary.Audio\BLibrary.Audio.projitems')" />
+  <Import Project="..\BLibrary.Gui\BLibrary.Gui.projitems" Label="Shared" Condition="Exists('..\BLibrary.Gui\BLibrary.Gui.projitems')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="DragonOgg">
+      <HintPath>..\Dependencies\DragonOgg.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\Dependencies\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickFont">
+      <HintPath>..\Dependencies\QuickFont.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Starliners.Data\Starliners.Data.csproj">
+      <Project>{1D078E08-4AF5-479C-A2F5-75B076B17DB8}</Project>
+      <Name>Starliners.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Starliners.Resources\Starliners.Resources.csproj">
+      <Project>{7BF503E8-BA4D-46C0-9087-6B091C09CBAD}</Project>
+      <Name>Starliners.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Starliners.Game\Starliners.Game.csproj">
+      <Project>{88CF1C97-BD17-45DC-8BB4-5CB144D88390}</Project>
+      <Name>Starliners.Game</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OpenTK.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="openal32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

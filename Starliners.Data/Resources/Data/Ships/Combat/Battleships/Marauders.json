@@ -1,0 +1,25 @@
+﻿[
+    {
+        "name": "battleship1-0",
+        "icon": "battleship0",
+        "size": "battleship",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "outcast"
+            }
+        ],
+        "manouver": 500,
+        "tracking": 1000,
+        "weapons": {
+            "heat": 1600,
+            "kinetic": 0,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 16000,
+            "shield": 16000,
+            "hull": 16000
+        }
+    }
+]

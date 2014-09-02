@@ -1,0 +1,14 @@
+﻿{
+    "version": "0.1.0.0",
+    "parent": "0.1.0.39",
+    "channel": "starliners",
+    "fileSource": "Starliners/bin/Debug/",
+    "assetRoot": "/home/florian/assets/",
+    "postbuild": [
+        {
+            "action": "link",
+            "name": "current"
+        }
+    ]
+}
+

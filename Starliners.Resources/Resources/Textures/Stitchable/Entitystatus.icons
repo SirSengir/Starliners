@@ -1,0 +1,10 @@
+﻿{
+    "scale" : 32,
+    "icons" :
+    [
+        {
+            "key": "entitystatus",
+            "sprite": [1, 0, 2, 3]
+        },
+    ]
+}

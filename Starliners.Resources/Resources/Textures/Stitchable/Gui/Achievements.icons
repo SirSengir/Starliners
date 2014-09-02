@@ -1,0 +1,11 @@
+﻿{
+	"states": [ "game" ],
+    "scale" : 96,
+    "icons" :
+    [
+        {
+            "key" : "achievement-generic",
+            "sprite" : [0]
+        }
+    ]
+}

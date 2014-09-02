@@ -1,0 +1,18 @@
+﻿[
+    {
+        "name": "outer-rim",
+        "fleetStyle": "Marauders",
+        "colours": {
+            "empire": "ffbf00",
+            "hulks": "ffbf00",
+            "shields": "00ffff",
+            "weapons": "32cd32",
+        },
+        "flags": [
+            "barbarian"
+        ],
+        "cultures": [
+            "outcast"
+        ]
+    }
+]

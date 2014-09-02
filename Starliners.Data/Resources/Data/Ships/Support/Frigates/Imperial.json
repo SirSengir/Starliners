@@ -1,0 +1,92 @@
+﻿[
+    {
+        "name": "frigate0-SS0",
+        "icon": "frigate0",
+        "size": "frigate",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceShieldRegen",
+                "minimum": 1
+            }
+        ],
+        "constraints": [
+            "CompetenceShieldRegen"
+        ],
+        "manouver": 4000,
+        "tracking": 2500,
+        "heat": 25,
+        "kinetic": 0,
+        "radioactive": 0,
+        "armour": 500,
+        "shield": 500,
+        "hull": 1000,
+        "support": {
+            "shield": 50
+        }
+    },
+    {
+        "name": "frigate0-SA0",
+        "icon": "frigate0",
+        "size": "frigate",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceArmourRepair",
+                "minimum": 1
+            }
+        ],
+        "constraints": [
+            "CompetenceArmourRepair"
+        ],
+        "manouver": 4000,
+        "tracking": 2500,
+        "heat": 25,
+        "kinetic": 0,
+        "radioactive": 0,
+        "armour": 500,
+        "shield": 500,
+        "hull": 1000,
+        "support": {
+            "armour": 50
+        }
+    },
+    {
+        "name": "frigate0-SH0",
+        "icon": "frigate0",
+        "size": "frigate",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceHullRepair",
+                "minimum": 1
+            }
+        ],
+        "constraints": [
+            "CompetenceHullRepair"
+        ],
+        "manouver": 4000,
+        "tracking": 2500,
+        "heat": 25,
+        "kinetic": 0,
+        "radioactive": 0,
+        "armour": 500,
+        "shield": 500,
+        "hull": 1000,
+        "support": {
+            "hull": 50
+        }
+    }
+]

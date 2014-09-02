@@ -1,0 +1,92 @@
+﻿[
+    {
+        "name": "shipyard0-0",
+        "category": "shipyards",
+        "icon": "symbolYardFrigate",
+        "cost": {
+            "value": 1000,
+            "progression": "linear"
+        },
+        "trigger": [
+        ],
+        "effects": {
+            "MaintenanceFrigates": 6
+        }
+    },
+    {
+        "name": "shipyard1-0",
+        "category": "shipyards",
+        "icon": "symbolYardDestroyer",
+        "cost": {
+            "value": 2000,
+            "progression": "linear"
+        },
+        "trigger": [
+            {
+                "type": "building",
+                "value": "shipyard0-0",
+                "minimum": 5
+            }
+        ],
+        "effects": {
+            "MaintenanceDestroyers": 3
+        }
+    },
+    {
+        "name": "shipyard2-0",
+        "category": "shipyards",
+        "icon": "symbolYardCruiser",
+        "cost": {
+            "value": 3000,
+            "progression": "linear"
+        },
+        "trigger": [
+            {
+                "type": "building",
+                "value": "shipyard1-0",
+                "minimum": 4
+            }
+        ],
+        "effects": {
+            "MaintenanceCruisers": 2
+        }
+    },
+    {
+        "name": "shipyard3-0",
+        "category": "shipyards",
+        "icon": "symbolYardBattleship",
+        "cost": {
+            "value": 4000,
+            "progression": "linear"
+        },
+        "trigger": [
+            {
+                "type": "building",
+                "value": "shipyard2-0",
+                "minimum": 3
+            }
+        ],
+        "effects": {
+            "MaintenanceBattleships": 1
+        }
+    },
+    {
+        "name": "shipyard4-0",
+        "category": "shipyards",
+        "icon": "symbolYardDreadnought",
+        "cost": {
+            "value": 6000,
+            "progression": "linear"
+        },
+        "trigger": [
+            {
+                "type": "building",
+                "value": "shipyard3-0",
+                "minimum": 2
+            }
+        ],
+        "effects": {
+            "MaintenanceDreadnoughts": 1
+        }
+    }
+]

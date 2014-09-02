@@ -1,0 +1,25 @@
+﻿[
+    {
+        "name": "dreadnought1-0",
+        "icon": "dreadnought0",
+        "size": "dreadnought",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "outcast"
+            }
+        ],
+        "manouver": 100,
+        "tracking": 500,
+        "weapons": {
+            "heat": 3200,
+            "kinetic": 0,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 32000,
+            "shield": 32000,
+            "hull": 32000
+        }
+    }
+]

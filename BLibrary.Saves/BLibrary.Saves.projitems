@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{59E676E1-2C32-4B08-8A62-116418A035C6}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BLibrary</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Saves\PluginInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Saves\SaveGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Saves\SaveHeader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Saves\SaveUtils.cs" />
+  </ItemGroup>
+</Project>

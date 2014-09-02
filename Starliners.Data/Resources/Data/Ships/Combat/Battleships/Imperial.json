@@ -1,0 +1,86 @@
+﻿[
+    {
+        "name": "battleship0-H0",
+        "icon": "battleship0",
+        "size": "battleship",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceHeat",
+                "minimum": 1
+            }
+        ],
+        "manouver": 500,
+        "tracking": 1000,
+        "weapons": {
+            "heat": 1600,
+            "kinetic": 0,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 16000,
+            "shield": 16000,
+            "hull": 16000
+        }
+    },
+    {
+        "name": "battleship0-K0",
+        "icon": "battleship0",
+        "size": "battleship",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceKinetic",
+                "minimum": 1
+            }
+        ],
+        "manouver": 500,
+        "tracking": 1000,
+        "weapons": {
+            "heat": 0,
+            "kinetic": 1600,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 16000,
+            "shield": 16000,
+            "hull": 16000
+        }
+    },
+    {
+        "name": "battleship0-R0",
+        "icon": "battleship0",
+        "size": "battleship",
+        "trigger": [
+            {
+                "type": "culture",
+                "value": "imperial"
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceRadiation",
+                "minimum": 1
+            }
+        ],
+        "manouver": 500,
+        "tracking": 1000,
+        "weapons": {
+            "heat": 0,
+            "kinetic": 0,
+            "radioactive": 1600
+        },
+        "structure":  {
+            "armour": 16000,
+            "shield": 16000,
+            "hull": 16000
+        }
+    }
+]

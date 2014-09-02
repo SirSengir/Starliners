@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{0A3C83B2-8713-46FD-8D49-3CE23011FA46}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BLibrary</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Util\BitFlagContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\CLRType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Counter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\CustomEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\MetaContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\PlatformOS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\PlatformUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Timer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\DictionaryWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ServerRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ApplicationFolder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\FolderManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ZipUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\FileUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ArgumentHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\IArgumentDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\SimpleLog.cs" />
+  </ItemGroup>
+</Project>

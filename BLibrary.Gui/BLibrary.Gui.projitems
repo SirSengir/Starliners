@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{5185BCB3-1C4D-44F8-9201-ADC2BF13CD2C}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BLibrary</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Gui\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Easing.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\ElementRelocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\ElementState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\GuiElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\GuiManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\GuiText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\GuiWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\HeldObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\IDraggable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\IGuiCreator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\ITooltipController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Positioning.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\ScreenGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\StyleControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\StyleElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\StyleHeader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\StyleInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\StyleWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Tinting.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Tooltip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widget.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\WidgetContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\WindowPresets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Backgrounds\BackgroundDynamic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Backgrounds\BackgroundSimple.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Backgrounds\BackgroundStatic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Backgrounds\BackgroundTiled.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Tooltips\TooltipDescribable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Tooltips\TooltipEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Tooltips\TooltipProvided.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Tooltips\TooltipSimple.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Tooltips\TooltipSwitchable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\BlazonEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Button.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Canvas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Checkbox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\ColourDisplay.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Frame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Gauge.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Grouping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Header.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\IconBlazon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\IconSymbol.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\InputColour.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\InputIcon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\InputText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Label.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\ListItemDrawable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\ListItemPlugin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\ListItemSave.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\ListItemText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\LoadBar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\MenuWidget.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Progress.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\RichParagraph.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\RichTextView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Scale.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Scrollable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\SimpleOverlayed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Switchable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\TabControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\Table.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\TextView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\LegendElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\TabSaved.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\GuiRemote.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\GuiLocal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Backgrounds\Background.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Backgrounds\BackgroundCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiAbout.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiExit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiLicenses.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiLoadStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiPlugins.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiSaves.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiChat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiMessageBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiPrompt.cs" />
+  </ItemGroup>
+</Project>

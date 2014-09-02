@@ -1,0 +1,237 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary", "BLibrary\BLibrary.shproj", "{36AB725C-356B-4B03-9626-9B4C85B09A9A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Graphics", "BLibrary.Graphics\BLibrary.Graphics.shproj", "{09338624-A473-47C1-9425-500B3FE83D0C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Gui.Data", "BLibrary.Gui.Data\BLibrary.Gui.Data.shproj", "{15C4FCDB-9B8B-41A6-9DD5-71E85EF017C2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Util", "BLibrary.Util\BLibrary.Util.shproj", "{0A3C83B2-8713-46FD-8D49-3CE23011FA46}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Json", "BLibrary.Json\BLibrary.Json.shproj", "{BAA76250-3623-4FDC-8BCA-6523BD89F258}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Network", "BLibrary.Network\BLibrary.Network.shproj", "{A6B33F8C-73CD-4B91-B977-17DD1D8E89C5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Resources", "BLibrary.Resources\BLibrary.Resources.shproj", "{A69E5268-6B7A-4960-88B1-19D2E411903F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Saves", "BLibrary.Saves\BLibrary.Saves.shproj", "{59E676E1-2C32-4B08-8A62-116418A035C6}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Gui", "BLibrary.Gui\BLibrary.Gui.shproj", "{5185BCB3-1C4D-44F8-9201-ADC2BF13CD2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starliners", "Starliners\Starliners.csproj", "{D9E7D1B8-597F-4D33-A91F-47BBC15DBDD1}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Starliners.Frontend", "Starliners.Frontend\Starliners.Frontend.shproj", "{02E988A4-2542-4113-883E-68AD1E577793}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Audio", "BLibrary.Audio\BLibrary.Audio.shproj", "{05D4ED79-6055-4CF3-B3AF-3BAF3D62403B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starliners.Resources", "Starliners.Resources\Starliners.Resources.csproj", "{7BF503E8-BA4D-46C0-9087-6B091C09CBAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starliners.Data", "Starliners.Data\Starliners.Data.csproj", "{1D078E08-4AF5-479C-A2F5-75B076B17DB8}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Starliners.Version", "Starliners.Version\Starliners.Version.shproj", "{4FDB820E-09BD-4BC7-AFB7-1A0A0FC2D99A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starliners.Game", "Starliners.Game\Starliners.Game.csproj", "{88CF1C97-BD17-45DC-8BB4-5CB144D88390}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starliners.Dedicated", "Starliners.Dedicated\Starliners.Dedicated.csproj", "{5A7498F8-64F8-49F5-B142-D4E8BAAE0B0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPublisher", "BPublisher\BPublisher.csproj", "{C87B550E-7EEE-452D-A977-BFC79B964A51}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BLibrary.Deployment", "BLibrary.Deployment\BLibrary.Deployment.shproj", "{73D8E61C-8809-413F-AB1C-05410C451DB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLauncher", "BLauncher\BLauncher.csproj", "{AF8E9653-ED1F-4EC6-B89F-6F13CE3E07A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D078E08-4AF5-479C-A2F5-75B076B17DB8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D078E08-4AF5-479C-A2F5-75B076B17DB8}.Debug|x86.Build.0 = Debug|Any CPU
+		{1D078E08-4AF5-479C-A2F5-75B076B17DB8}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D078E08-4AF5-479C-A2F5-75B076B17DB8}.Release|x86.Build.0 = Release|Any CPU
+		{5A7498F8-64F8-49F5-B142-D4E8BAAE0B0D}.Debug|x86.ActiveCfg = Debug|x86
+		{5A7498F8-64F8-49F5-B142-D4E8BAAE0B0D}.Debug|x86.Build.0 = Debug|x86
+		{5A7498F8-64F8-49F5-B142-D4E8BAAE0B0D}.Release|x86.ActiveCfg = Release|x86
+		{5A7498F8-64F8-49F5-B142-D4E8BAAE0B0D}.Release|x86.Build.0 = Release|x86
+		{7BF503E8-BA4D-46C0-9087-6B091C09CBAD}.Debug|x86.ActiveCfg = Debug|x86
+		{7BF503E8-BA4D-46C0-9087-6B091C09CBAD}.Debug|x86.Build.0 = Debug|x86
+		{7BF503E8-BA4D-46C0-9087-6B091C09CBAD}.Release|x86.ActiveCfg = Release|x86
+		{7BF503E8-BA4D-46C0-9087-6B091C09CBAD}.Release|x86.Build.0 = Release|x86
+		{88CF1C97-BD17-45DC-8BB4-5CB144D88390}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{88CF1C97-BD17-45DC-8BB4-5CB144D88390}.Debug|x86.Build.0 = Debug|Any CPU
+		{88CF1C97-BD17-45DC-8BB4-5CB144D88390}.Release|x86.ActiveCfg = Release|Any CPU
+		{88CF1C97-BD17-45DC-8BB4-5CB144D88390}.Release|x86.Build.0 = Release|Any CPU
+		{AF8E9653-ED1F-4EC6-B89F-6F13CE3E07A4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF8E9653-ED1F-4EC6-B89F-6F13CE3E07A4}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF8E9653-ED1F-4EC6-B89F-6F13CE3E07A4}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF8E9653-ED1F-4EC6-B89F-6F13CE3E07A4}.Release|x86.Build.0 = Release|Any CPU
+		{C87B550E-7EEE-452D-A977-BFC79B964A51}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C87B550E-7EEE-452D-A977-BFC79B964A51}.Debug|x86.Build.0 = Debug|Any CPU
+		{C87B550E-7EEE-452D-A977-BFC79B964A51}.Release|x86.ActiveCfg = Release|Any CPU
+		{C87B550E-7EEE-452D-A977-BFC79B964A51}.Release|x86.Build.0 = Release|Any CPU
+		{D9E7D1B8-597F-4D33-A91F-47BBC15DBDD1}.Debug|x86.ActiveCfg = Debug|x86
+		{D9E7D1B8-597F-4D33-A91F-47BBC15DBDD1}.Debug|x86.Build.0 = Debug|x86
+		{D9E7D1B8-597F-4D33-A91F-47BBC15DBDD1}.Release|x86.ActiveCfg = Release|x86
+		{D9E7D1B8-597F-4D33-A91F-47BBC15DBDD1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Starliners\Starliners.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.TextStylePolicy = $2
+		$2.inheritsSet = null
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.IndentSwitchBody = True
+		$3.NamespaceBraceStyle = EndOfLine
+		$3.ClassBraceStyle = EndOfLine
+		$3.InterfaceBraceStyle = EndOfLine
+		$3.StructBraceStyle = EndOfLine
+		$3.EnumBraceStyle = EndOfLine
+		$3.MethodBraceStyle = EndOfLine
+		$3.ConstructorBraceStyle = EndOfLine
+		$3.AfterDelegateDeclarationParameterComma = True
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/x-csharp
+		$3.scope = text/x-csharp
+		$0.TextStylePolicy = $4
+		$4.FileWidth = 120
+		$4.inheritsSet = VisualStudio
+		$4.inheritsScope = text/plain
+		$4.scope = text/plain
+		$0.StandardHeader = $5
+		$5.Text = 
+		$5.IncludeInNewFiles = True
+		$0.NameConventionPolicy = $6
+		$6.Rules = $7
+		$7.NamingRule = $8
+		$8.Name = Namespaces
+		$8.AffectedEntity = Namespace
+		$8.VisibilityMask = VisibilityMask
+		$8.NamingStyle = PascalCase
+		$8.IncludeInstanceMembers = True
+		$8.IncludeStaticEntities = True
+		$7.NamingRule = $9
+		$9.Name = Types
+		$9.AffectedEntity = Class, Struct, Enum, Delegate
+		$9.VisibilityMask = Public
+		$9.NamingStyle = PascalCase
+		$9.IncludeInstanceMembers = True
+		$9.IncludeStaticEntities = True
+		$7.NamingRule = $10
+		$10.Name = Interfaces
+		$10.RequiredPrefixes = $11
+		$11.String = I
+		$10.AffectedEntity = Interface
+		$10.VisibilityMask = Public
+		$10.NamingStyle = PascalCase
+		$10.IncludeInstanceMembers = True
+		$10.IncludeStaticEntities = True
+		$7.NamingRule = $12
+		$12.Name = Attributes
+		$12.RequiredSuffixes = $13
+		$13.String = Attribute
+		$12.AffectedEntity = CustomAttributes
+		$12.VisibilityMask = Public
+		$12.NamingStyle = PascalCase
+		$12.IncludeInstanceMembers = True
+		$12.IncludeStaticEntities = True
+		$7.NamingRule = $14
+		$14.Name = Event Arguments
+		$14.RequiredSuffixes = $15
+		$15.String = EventArgs
+		$14.AffectedEntity = CustomEventArgs
+		$14.VisibilityMask = Public
+		$14.NamingStyle = PascalCase
+		$14.IncludeInstanceMembers = True
+		$14.IncludeStaticEntities = True
+		$7.NamingRule = $16
+		$16.Name = Exceptions
+		$16.RequiredSuffixes = $17
+		$17.String = Exception
+		$16.AffectedEntity = CustomExceptions
+		$16.VisibilityMask = VisibilityMask
+		$16.NamingStyle = PascalCase
+		$16.IncludeInstanceMembers = True
+		$16.IncludeStaticEntities = True
+		$7.NamingRule = $18
+		$18.Name = Methods
+		$18.AffectedEntity = Methods
+		$18.VisibilityMask = Protected, Public
+		$18.NamingStyle = PascalCase
+		$18.IncludeInstanceMembers = True
+		$18.IncludeStaticEntities = True
+		$7.NamingRule = $19
+		$19.Name = Static Readonly Fields
+		$19.AffectedEntity = ReadonlyField
+		$19.VisibilityMask = Protected, Public
+		$19.NamingStyle = PascalCase
+		$19.IncludeInstanceMembers = False
+		$19.IncludeStaticEntities = True
+		$7.NamingRule = $20
+		$20.Name = Fields
+		$20.AffectedEntity = Field
+		$20.VisibilityMask = Protected, Public
+		$20.NamingStyle = PascalCase
+		$20.IncludeInstanceMembers = True
+		$20.IncludeStaticEntities = True
+		$7.NamingRule = $21
+		$21.Name = ReadOnly Fields
+		$21.AffectedEntity = ReadonlyField
+		$21.VisibilityMask = Protected, Public
+		$21.NamingStyle = PascalCase
+		$21.IncludeInstanceMembers = True
+		$21.IncludeStaticEntities = False
+		$7.NamingRule = $22
+		$22.Name = Constant Fields
+		$22.AffectedEntity = ConstantField
+		$22.VisibilityMask = Protected, Public
+		$22.NamingStyle = PascalCase
+		$22.IncludeInstanceMembers = True
+		$22.IncludeStaticEntities = True
+		$7.NamingRule = $23
+		$23.Name = Properties
+		$23.AffectedEntity = Property
+		$23.VisibilityMask = Protected, Public
+		$23.NamingStyle = PascalCase
+		$23.IncludeInstanceMembers = True
+		$23.IncludeStaticEntities = True
+		$7.NamingRule = $24
+		$24.Name = Events
+		$24.AffectedEntity = Event
+		$24.VisibilityMask = Protected, Public
+		$24.NamingStyle = PascalCase
+		$24.IncludeInstanceMembers = True
+		$24.IncludeStaticEntities = True
+		$7.NamingRule = $25
+		$25.Name = Enum Members
+		$25.AffectedEntity = EnumMember
+		$25.VisibilityMask = VisibilityMask
+		$25.NamingStyle = PascalCase
+		$25.IncludeInstanceMembers = True
+		$25.IncludeStaticEntities = True
+		$7.NamingRule = $26
+		$26.Name = Parameters
+		$26.AffectedEntity = Parameter
+		$26.VisibilityMask = VisibilityMask
+		$26.NamingStyle = CamelCase
+		$26.IncludeInstanceMembers = True
+		$26.IncludeStaticEntities = True
+		$7.NamingRule = $27
+		$27.Name = Type Parameters
+		$27.RequiredPrefixes = $28
+		$28.String = T
+		$27.AffectedEntity = TypeParameter
+		$27.VisibilityMask = VisibilityMask
+		$27.NamingStyle = PascalCase
+		$27.IncludeInstanceMembers = True
+		$27.IncludeStaticEntities = True
+		$0.TextStylePolicy = $29
+		$29.inheritsSet = null
+		$29.scope = application/json
+	EndGlobalSection
+EndGlobal

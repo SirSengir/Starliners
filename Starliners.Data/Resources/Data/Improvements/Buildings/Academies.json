@@ -1,0 +1,242 @@
+﻿[
+    {
+        "name": "academy0-0",
+        "category": "academies",
+        "icon": "symbolAcademies",
+        "cost": {
+            "value": 500,
+            "progression": "exponential"
+        },
+        "flags": [
+            "overhaul",
+            "focusHeat"
+        ],
+        "trigger": [
+            {
+                "type": "attribute",
+                "value": "ModFocusKinetic",
+                "maximum": 0
+            },
+            {
+                "type": "attribute",
+                "value": "ModFocusRadiation",
+                "maximum": 0
+            }
+        ],
+        "effects": {
+            "ModFocusHeat": 100
+        }
+    },
+    {
+        "name": "academy0-1",
+        "category": "academies",
+        "icon": "symbolAcademies",
+        "cost": {
+            "value": 500,
+            "progression": "exponential"
+        },
+        "flags": [
+            "overhaul",
+            "focusKinetic"
+        ],
+        "trigger": [
+            {
+                "type": "attribute",
+                "value": "ModFocusHeat",
+                "maximum": 0
+            },
+            {
+                "type": "attribute",
+                "value": "ModFocusRadiation",
+                "maximum": 0
+            }
+        ],
+        "effects": {
+            "ModFocusKinetic": 100
+        }
+    },
+    {
+        "name": "academy0-2",
+        "category": "academies",
+        "icon": "symbolAcademies",
+        "cost": {
+            "value": 500,
+            "progression": "exponential"
+        },
+        "flags": [
+            "overhaul",
+            "focusRadiation"
+        ],
+        "trigger": [
+            {
+                "type": "attribute",
+                "value": "ModFocusKinetic",
+                "maximum": 0
+            },
+            {
+                "type": "attribute",
+                "value": "ModFocusHeat",
+                "maximum": 0
+            }
+        ],
+        "effects": {
+            "ModFocusRadiation": 100
+        }
+    },
+    {
+        "name": "academy1-0",
+        "category": "academies",
+        "icon": "symbolAcademies",
+        "cost": {
+            "value": 500,
+            "progression": "exponential"
+        },
+        "flags": [
+            "overhaul",
+            "resistHeat"
+        ],
+        "trigger": [
+            {
+                "type": "attribute",
+                "value": "ModResistKinetic",
+                "maximum": 0
+            },
+            {
+                "type": "attribute",
+                "value": "ModResistRadiation",
+                "maximum": 0
+            }
+        ],
+        "effects": {
+            "ModResistHeat": 200
+        }
+    },
+    {
+        "name": "academy1-1",
+        "category": "academies",
+        "icon": "symbolAcademies",
+        "cost": {
+            "value": 500,
+            "progression": "exponential"
+        },
+        "flags": [
+            "overhaul",
+            "resistKinetic"
+        ],
+        "trigger": [
+            {
+                "type": "attribute",
+                "value": "ModResistHeat",
+                "maximum": 0
+            },
+            {
+                "type": "attribute",
+                "value": "ModResistRadiation",
+                "maximum": 0
+            }
+        ],
+        "effects": {
+            "ModResistKinetic": 200
+        }
+    },
+    {
+        "name": "academy1-2",
+        "category": "academies",
+        "icon": "symbolAcademies",
+        "cost": {
+            "value": 500,
+            "progression": "exponential"
+        },
+        "flags": [
+            "overhaul",
+            "resistRadiation"
+        ],
+        "trigger": [
+            {
+                "type": "attribute",
+                "value": "ModResistKinetic",
+                "maximum": 0
+            },
+            {
+                "type": "attribute",
+                "value": "ModResistHeat",
+                "maximum": 0
+            }
+        ],
+        "effects": {
+            "ModResistRadiation": 200
+        }
+    },
+    {
+        "name": "academy2-0",
+        "category": "academies",
+        "icon": "symbolSupShield",
+        "cost": {
+            "value": 1000,
+            "progression": "exponential"
+        },
+        "trigger": [
+            {
+                "type": "attribute",
+                "value": "CompetenceArmourRepair",
+                "maximum": 0
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceHullRepair",
+                "maximum": 0
+            }
+        ],
+        "effects": {
+            "CompetenceShieldRegen": 1
+        }
+    },
+    {
+        "name": "academy2-1",
+        "category": "academies",
+        "icon": "symbolSupArmour",
+        "cost": {
+            "value": 1000,
+            "progression": "exponential"
+        },
+        "trigger": [
+            {
+                "type": "attribute",
+                "value": "CompetenceShieldRegen",
+                "maximum": 0
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceHullRepair",
+                "maximum": 0
+            }
+        ],
+        "effects": {
+            "CompetenceArmourRepair": 1
+        }
+    },
+    {
+        "name": "academy2-2",
+        "category": "academies",
+        "icon": "symbolSupHull",
+        "cost": {
+            "value": 1000,
+            "progression": "exponential"
+        },
+        "trigger": [
+            {
+                "type": "attribute",
+                "value": "CompetenceArmourRepair",
+                "maximum": 0
+            },
+            {
+                "type": "attribute",
+                "value": "CompetenceShieldRegen",
+                "maximum": 0
+            }
+        ],
+        "effects": {
+            "CompetenceHullRepair": 1
+        }
+    }
+]

@@ -1,0 +1,295 @@
+﻿{
+    "states": [ "navigation", "game" ],
+    "scale" : 32,
+    "icons" :
+    [
+        {
+            "key" : "medal.gold",
+            "sprite" : [0]
+        },
+        {
+            "key" : "medal.silver",
+            "sprite" : [1]
+        },
+        {
+            "key" : "medal.bronze",
+            "sprite" : [2]
+        },
+        {
+            "key": "apiaristtracker",
+            "sprite": [16]
+        },
+        {
+            "key": "botanisttracker",
+            "sprite": [17]
+        },
+        {
+            "key": "arboristtracker",
+            "sprite": [18]
+        },
+        {
+            "key": "recipetracker",
+            "sprite": [19]
+        },
+        {
+            "key": "menustocks",
+            "sprite": [20]
+        },
+		{
+			"key": "thermometer",
+			"sprite": [32, 33]
+		},
+		{
+			"key": "clock",
+			"sprite": [34, 35, 36]
+		}
+		{
+			"key": "inventory",
+			"sprite": [48]
+		},
+        {
+            "key": "magnifier",
+            "sprite": [49]
+        },
+        {
+            "key": "invalid",
+            "sprite": [50]
+        },
+        {
+            "key": "starred",
+            "sprite": [51]
+        },
+        {
+            "key": "money",
+            "sprite": [52]
+        },
+        {
+            "key": "people",
+            "sprite": [53]
+        },
+        {
+            "key": "menuworkers",
+            "sprite": [53]
+        },
+        {
+            "key": "trash",
+            "sprite": [54]
+        },
+        {
+            "key": "info",
+            "sprite": [55]
+        },
+        {
+            "key": "pickup",
+            "sprite": [56]
+        },
+        {
+            "key": "help",
+            "sprite": [57]
+        },
+        {
+            "key": "rename",
+            "sprite": [58]
+        },
+        {
+            "key": "ncat-default",
+            "sprite": [59]
+        },
+        {
+            "key": "ncat-bees",
+            "sprite": [16]
+        },
+        {
+            "key": "ncat-recipes",
+            "sprite": [19]
+        },
+        {
+            "key": "ncat-stocks",
+            "sprite": [20]
+        },
+        {
+            "key": "ncat-discovery",
+            "sprite": [49]
+        },
+		{
+			"key": "arrows",
+			"sprite": [64, 65, 66, 67]
+        },
+		{
+			"key": "arrowUp",
+			"sprite": [64]
+		},
+		{
+			"key": "arrowRight",
+			"sprite": [65]
+		},
+		{
+			"key": "arrowDown",
+			"sprite": [66]
+		},
+		{
+			"key": "arrowLeft",
+			"sprite": [67]
+		},
+		{
+			"key": "access",
+			"sprite": [80, 81]
+		},
+		{
+			"key": "crafting-off",
+			"sprite": [80]
+		},
+		{
+			"key": "crafting-on",
+			"sprite": [81]
+		},
+		{
+			"key": "beekeeping-off",
+			"sprite": [14]
+		},
+		{
+			"key": "beekeeping-on",
+			"sprite": [15]
+		},
+		{
+			"key": "pickup-resupply-off",
+			"sprite": [28]
+		},
+		{
+			"key": "pickup-resupply-on-off",
+			"sprite": [29]
+		},
+		{
+			"key": "pickup-resupply-off-on",
+			"sprite": [30]
+		},
+		{
+			"key": "pickup-resupply-on",
+			"sprite": [31]
+		},
+		{
+			"key": "quirk.natural",
+			"sprite": [112]
+		},
+		{
+			"key": "quirk.modest",
+			"sprite": [112]
+		},
+		{
+			"key": "quirk.pollinatorExpert",
+			"sprite": [112]
+		},
+		{
+			"key": "quirk.centrifuge0",
+			"sprite": [128]
+		},
+		{
+			"key": "quirk.centrifuge1",
+			"sprite": [129]
+		},
+		{
+			"key": "quirk.centrifuge2",
+			"sprite": [130]
+		},
+		{
+			"key": "quirk.centrifuge3",
+			"sprite": [131]
+		},
+		{
+			"key": "quirk.centrifuge4",
+			"sprite": [132]
+		},
+		{
+			"key": "quirk.mixer0",
+			"sprite": [133]
+		},
+		{
+			"key": "quirk.mixer1",
+			"sprite": [134]
+		},
+		{
+			"key": "quirk.mixer2",
+			"sprite": [135]
+		},
+		{
+			"key": "quirk.mixer3",
+			"sprite": [136]
+		},
+		{
+			"key": "quirk.mixer4",
+			"sprite": [137]
+		},
+		{
+			"key": "quirk.grinder0",
+			"sprite": [138]
+		},
+		{
+			"key": "quirk.grinder1",
+			"sprite": [139]
+		},
+		{
+			"key": "quirk.grinder2",
+			"sprite": [140]
+		},
+		{
+			"key": "quirk.grinder3",
+			"sprite": [141]
+		},
+		{
+			"key": "quirk.grinder4",
+			"sprite": [142]
+		},
+		{
+			"key": "quirk.entitlement0",
+			"sprite": [144]
+		},
+		{
+			"key": "quirk.entitlement1",
+			"sprite": [145]
+		},
+		{
+			"key": "quirk.entitlement2",
+			"sprite": [146]
+		},
+		{
+			"key": "quirk.entitlement3",
+			"sprite": [147]
+		},
+		{
+			"key": "quirk.entitlement4",
+			"sprite": [148]
+		},
+		{
+			"key": "quirk.entitlement5",
+			"sprite": [149]
+		},
+		{
+            "key" : "load-start",
+            "sprite" : [160]
+        },
+		{
+            "key" : "load-end",
+            "sprite" : [161]
+        },
+		{
+            "key" : "load-symbol-0",
+            "sprite" : [176, 177, 178]
+        },
+		{
+            "key" : "load-symbol-1",
+            "sprite" : [192, 193, 194]
+        },
+		{
+            "key" : "load-symbol-2",
+            "sprite" : [208, 209, 210]
+        },
+		{
+            "key" : "load-symbol-3",
+            "sprite" : [224, 225, 226]
+        },
+		{
+            "key" : "load-symbol-4",
+            "sprite" : [240, 241, 242]
+        }
+    ]
+}

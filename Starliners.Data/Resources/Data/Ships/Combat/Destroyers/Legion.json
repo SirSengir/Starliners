@@ -1,0 +1,25 @@
+﻿[
+    {
+        "name": "destroyer2-H0",
+        "icon": "destroyer0",
+        "size": "destroyer",
+        "flags": [ "legion" ],
+        "resists": {
+            "heat": 0,
+            "kinetic": 0,
+            "radiation": 0
+        },
+        "manouver": 2500,
+        "tracking": 2500,
+        "weapons": {
+            "heat": 150,
+            "kinetic": 0,
+            "radioactive": 0
+        },
+        "structure":  {
+            "armour": 1500,
+            "shield": 1500,
+            "hull": 500
+        }
+    },
+]

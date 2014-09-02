@@ -1,0 +1,279 @@
+﻿[
+    {
+        "key": "default",
+        "background": "main",
+        "inset": "guiInset",
+        "tinting": {
+            "type": "background"
+        },
+        "header": {
+            "inactive": "guiWindowHeader",
+            "dragged": "guiWindowHeaderDragged",
+            "tinting": {
+                "type": "parent"
+            }
+        },
+        "button": {
+            "inactive": "guiButton",
+            "hovered": "guiButtonHovered",
+            "pressed": "guiButtonPressed",
+            "disabled": "guiButtonDisabled"
+        },
+        "switchable": {
+            "inactive": "guiButton",
+            "hovered": "guiButtonHovered",
+            "pressed": "guiButtonPressed",
+            "disabled": "guiButtonDisabled"
+        },
+        "tab": {
+            "inactive": "guiControl",
+            "hovered": "guiControlHovered",
+            "pressed": "guiControlPressed",
+            "disabled": "guiControl"
+        },
+        "input": {
+            "inactive": "guiInputInactive",
+            "hovered": "guiInputActive",
+            "active": "guiInputActive"
+        },
+        "slots": [
+            {
+                "key": "default",
+                "inactive": "guiSlotDefault",
+                "hovered": "guiSlotHovered",
+                "pressed": "guiSlotDefault",
+                "disabled": "guiSlotDisabled"
+            },
+            {
+                "key": "button",
+                "inactive": "guiButton",
+                "hovered": "guiButtonHovered",
+                "pressed": "guiButton",
+                "disabled": "guiButtonDisabled"
+            },
+            {
+                "key": "hex",
+                "inactive": "guiSlotHex",
+                "hovered": "guiSlotHexHovered",
+                "pressed": "guiSlotHex",
+                "disabled": "guiSlotHex"
+            },
+            {
+                "key": "token",
+                "inactive": "guiSlotToken",
+                "hovered": "guiSlotTokenHovered",
+                "pressed": "guiSlotToken",
+                "disabled": "guiSlotToken"
+            }
+        ]
+    },
+    {
+        "key": "mainmenu",
+        "background": "main",
+        "inset": "guiInset",
+        "tinting": {
+            "type": "background"
+        },
+        "header": {
+            "inactive": "guiWindowHeader",
+            "dragged": "guiWindowHeaderDragged"
+        },
+        "button": {
+            "inactive": "buttonMenu",
+            "hovered": "buttonMenuHovered",
+            "pressed": "buttonMenuPressed",
+            "disabled": "buttonMenuDisabled"
+        },
+        "switchable": {
+            "inactive": "guiButton",
+            "hovered": "guiButtonHovered",
+            "pressed": "guiButtonPressed",
+            "disabled": "guiButtonDisabled"
+        },
+        "tab": {
+            "inactive": "guiControl",
+            "hovered": "guiControlHovered",
+            "pressed": "guiControlPressed",
+            "disabled": "guiControl"
+        },
+        "input": {
+            "inactive": "guiInputInactive",
+            "hovered": "guiInputActive",
+            "active": "guiInputActive"
+        },
+        "slots": []
+    },
+    {
+        "key": "hud",
+        "background": "hud.backing",
+        "inset": "guiInset",
+        "tinting": {
+            "type": "background"
+        },
+        "header": {
+            "inactive": "guiWindowHeader",
+            "dragged": "guiWindowHeaderDragged"
+        },
+        "button": {
+            "inactive": "hud.inactive",
+            "hovered": "hud.active",
+            "pressed": "hud.active",
+            "disabled": "hud.inactive"
+        },
+        "switchable": {
+            "inactive": "guiButton",
+            "hovered": "guiButtonHovered",
+            "pressed": "guiButtonPressed",
+            "disabled": "guiButtonDisabled"
+        },
+        "tab": {
+            "inactive": "guiControl",
+            "hovered": "guiControlHovered",
+            "pressed": "guiControlPressed",
+            "disabled": "guiControl"
+        },
+        "input": {
+            "inactive": "guiInputInactive",
+            "hovered": "guiInputActive",
+            "active": "guiInputActive"
+        },
+        "slots": []
+    },
+    {
+        "key": "tooltip",
+        "background": "tooltip",
+        "inset": "guiInset",
+        "tinting": {
+            "type": "background"
+        },
+        "header": {
+            "inactive": "guiWindowHeader",
+            "dragged": "guiWindowHeaderDragged"
+        },
+        "button": {
+            "inactive": "hud.inactive",
+            "hovered": "hud.active",
+            "pressed": "hud.active",
+            "disabled": "hud.inactive"
+        },
+        "switchable": {
+            "inactive": "guiButton",
+            "hovered": "guiButtonHovered",
+            "pressed": "guiButtonPressed",
+            "disabled": "guiButtonDisabled"
+        },
+        "tab": {
+            "inactive": "guiControl",
+            "hovered": "guiControlHovered",
+            "pressed": "guiControlPressed",
+            "disabled": "guiControl"
+        },
+        "input": {
+            "inactive": "guiInputInactive",
+            "hovered": "guiInputActive",
+            "active": "guiInputActive"
+        },
+        "slots": []
+    },
+    {
+        "key": "dialogue",
+        "background": "dialogue",
+        "inset": "guiInset",
+        "tinting": {
+            "type": "background"
+        },
+        "header": {
+            "inactive": "guiWindowHeader",
+            "dragged": "guiWindowHeaderDragged"
+        },
+        "button": {
+            "inactive": "guiButton",
+            "hovered": "guiButtonHovered",
+            "pressed": "guiButtonPressed",
+            "disabled": "guiButtonDisabled"
+        },
+        "switchable": {
+            "inactive": "guiButton",
+            "hovered": "guiButtonHovered",
+            "pressed": "guiButtonPressed",
+            "disabled": "guiButtonDisabled"
+        },
+        "tab": {
+            "inactive": "guiControl",
+            "hovered": "guiControlHovered",
+            "pressed": "guiControlPressed",
+            "disabled": "guiControl"
+        },
+        "input": {
+            "inactive": "guiInputInactive",
+            "hovered": "guiInputActive",
+            "active": "guiInputActive"
+        },
+        "slots": [
+            {
+                "key": "default",
+                "inactive": "guiSlotDefault",
+                "hovered": "guiSlotHovered",
+                "pressed": "guiSlotDefault",
+                "disabled": "guiSlotDisabled"
+            },
+            {
+                "key": "button",
+                "inactive": "guiButton",
+                "hovered": "guiButtonHovered",
+                "pressed": "guiButton",
+                "disabled": "guiButtonDisabled"
+            },
+            {
+                "key": "hex",
+                "inactive": "guiSlotHex",
+                "hovered": "guiSlotHexHovered",
+                "pressed": "guiSlotHex",
+                "disabled": "guiSlotHex"
+            },
+            {
+                "key": "token",
+                "inactive": "guiSlotToken",
+                "hovered": "guiSlotTokenHovered",
+                "pressed": "guiSlotToken",
+                "disabled": "guiSlotToken"
+            }
+        ]
+    },
+    {
+        "key": "notification",
+        "background": "notification",
+        "inset": "guiInset",
+        "tinting": {
+            "type": "background"
+        },
+        "header": {
+            "inactive": "guiWindowHeader",
+            "dragged": "guiWindowHeaderDragged"
+        },
+        "button": {
+            "inactive": "guiButton",
+            "hovered": "guiButtonHovered",
+            "pressed": "guiButtonPressed",
+            "disabled": "guiButtonDisabled"
+        },
+        "switchable": {
+            "inactive": "guiButton",
+            "hovered": "guiButtonHovered",
+            "pressed": "guiButtonPressed",
+            "disabled": "guiButtonDisabled"
+        },
+        "tab": {
+            "inactive": "guiControl",
+            "hovered": "guiControlHovered",
+            "pressed": "guiControlPressed",
+            "disabled": "guiControl"
+        },
+        "input": {
+            "inactive": "guiInputInactive",
+            "hovered": "guiInputActive",
+            "active": "guiInputActive"
+        },
+        "slots": []
+    }
+]

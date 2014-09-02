@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{A6B33F8C-73CD-4B91-B977-17DD1D8E89C5}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BLibrary.Network</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Network\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Network\NetworkingClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\ConnectionState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\INetInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\IPacketHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\IPacketMarked.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Networking.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\NetworkingServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\PacketDispatch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Payload.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\UpdateMarker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\IPacketReader.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D078E08-4AF5-479C-A2F5-75B076B17DB8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Starliners.Data</RootNamespace>
+    <AssemblyName>Starliners.Data</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Meta\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Localization\" />
+    <Folder Include="Resources\Text\" />
+    <Folder Include="Resources\Data\" />
+    <Folder Include="Resources\Data\Factions\" />
+    <Folder Include="Resources\Data\Ships\" />
+    <Folder Include="Resources\Data\Names\" />
+    <Folder Include="Resources\Data\Names\Planets\" />
+    <Folder Include="Resources\Data\Cultures\" />
+    <Folder Include="Resources\Data\Invaders\" />
+    <Folder Include="Resources\Data\Improvements\" />
+    <Folder Include="Resources\Data\Classmaps\" />
+    <Folder Include="Resources\Data\Improvements\Categories\" />
+    <Folder Include="Resources\Data\Improvements\Buildings\" />
+    <Folder Include="Resources\Data\Ships\Combat\" />
+    <Folder Include="Resources\Data\Ships\Support\" />
+    <Folder Include="Resources\Data\Ships\Support\Frigates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Meta\Plugin.json" />
+    <EmbeddedResource Include="Resources\Localization\Localization.resx">
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Text\About.txt" />
+    <EmbeddedResource Include="Resources\Text\Licenses.txt" />
+    <EmbeddedResource Include="Resources\Data\Factions\_Common.json" />
+    <EmbeddedResource Include="Resources\Data\Names\Planets\_Common.json" />
+    <EmbeddedResource Include="Resources\Data\Cultures\_Common.json" />
+    <EmbeddedResource Include="Resources\Localization\Ships.resx">
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Data\Invaders\_Common.json" />
+    <EmbeddedResource Include="Resources\Data\Classmaps\Triggers.json" />
+    <EmbeddedResource Include="Resources\Localization\Improvements.resx">
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Data\Improvements\Categories\_Common.json" />
+    <EmbeddedResource Include="Resources\Data\Improvements\Buildings\Logistics.json" />
+    <EmbeddedResource Include="Resources\Data\Improvements\Buildings\Shipyards.json" />
+    <EmbeddedResource Include="Resources\Data\Improvements\Buildings\Weaponeers.json" />
+    <EmbeddedResource Include="Resources\Data\Improvements\Buildings\Academies.json" />
+    <EmbeddedResource Include="Resources\Data\Factions\Empires.json" />
+    <EmbeddedResource Include="Resources\Data\Factions\Rebels.json" />
+    <EmbeddedResource Include="Resources\Data\Improvements\Buildings\Mines.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Battleships\Imperial.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Battleships\Marauders.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Cruisers\Imperial.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Cruisers\Marauders.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Destroyers\Imperial.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Destroyers\Marauders.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Dreadnoughts\Imperial.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Dreadnoughts\Marauders.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Frigates\Imperial.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Frigates\Marauders.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Support\Frigates\Imperial.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Cruisers\Legion.json" />
+    <EmbeddedResource Include="Resources\Data\Ships\Combat\Destroyers\Legion.json" />
+  </ItemGroup>
+</Project>

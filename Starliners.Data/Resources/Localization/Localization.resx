@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="menu_about" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="menu_licenses" xml:space="preserve">
+    <value>Library Licenses</value>
+  </data>
+  <data name="menu_loadgame" xml:space="preserve">
+    <value>Load Game</value>
+  </data>
+  <data name="menu_settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="menu_setupgame" xml:space="preserve">
+    <value>Setup Game</value>
+  </data>
+  <data name="game_loading" xml:space="preserve">
+    <value>Loading Game...</value>
+  </data>
+  <data name="apply_changes" xml:space="preserve">
+    <value>Changes will be applied!</value>
+  </data>
+  <data name="setting_fullscreen" xml:space="preserve">
+    <value>Fullscreen</value>
+  </data>
+  <data name="setting_resolution" xml:space="preserve">
+    <value>Resolution</value>
+  </data>
+  <data name="setting_sound" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="setting_videomode" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="setting_window" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="setting_shadows" xml:space="preserve">
+    <value>Shadows</value>
+  </data>
+  <data name="setting_music" xml:space="preserve">
+    <value>Music</value>
+  </data>
+  <data name="setup_name" xml:space="preserve">
+    <value>Map Name</value>
+  </data>
+  <data name="setup_name_help" xml:space="preserve">
+    <value>Enter the name you want to give this game.</value>
+  </data>
+  <data name="setup_creator" xml:space="preserve">
+    <value>Player Name</value>
+  </data>
+  <data name="setup_creator_help" xml:space="preserve">
+    <value>Enter a name you want to play as.</value>
+  </data>
+  <data name="setup_mapsize" xml:space="preserve">
+    <value>Map Size</value>
+  </data>
+  <data name="setup_mapsize_help" xml:space="preserve">
+    <value>Choose the size of the map to generate.</value>
+  </data>
+  <data name="setup_scenario" xml:space="preserve">
+    <value>Scenario</value>
+  </data>
+  <data name="setup_scenario_help" xml:space="preserve">
+    <value>Select a scenario.</value>
+  </data>
+  <data name="tt_save_date" xml:space="preserve">
+    <value>Saved on {0}</value>
+  </data>
+  <data name="tt_save_name" xml:space="preserve">
+    <value>World: {0}</value>
+  </data>
+  <data name="tt_save_plugins" xml:space="preserve">
+    <value>Requires plugins:</value>
+  </data>
+  <data name="tt_save_version" xml:space="preserve">
+    <value>Game Version: {0}</value>
+  </data>
+  <data name="menu_plugins" xml:space="preserve">
+    <value>Plugins</value>
+  </data>
+  <data name="gui_exit" xml:space="preserve">
+    <value>Exit Menu</value>
+  </data>
+  <data name="tt_close_help" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="tt_help_help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="tt_help_help_desc" xml:space="preserve">
+    <value>Click to open the help entry for this window.</value>
+  </data>
+  <data name="tt_position_help" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="tt_position_help_desc" xml:space="preserve">
+    <value>Click to move this window back to its default position.</value>
+  </data>
+  <data name="battle_defeat" xml:space="preserve">
+    <value>Your forces were defeated in '{0}'.</value>
+  </data>
+  <data name="battle_joined_defense" xml:space="preserve">
+    <value>Your ships joined '{0}' as defenders.</value>
+  </data>
+  <data name="battle_joined_offense" xml:space="preserve">
+    <value>Your ships joined '{0}' as attackers.</value>
+  </data>
+  <data name="battle_victory" xml:space="preserve">
+    <value>Your forces were victorious in '{0}'.</value>
+  </data>
+  <data name="btn_confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btn_details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="btn_goto" xml:space="preserve">
+    <value>Goto</value>
+  </data>
+  <data name="btn_info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="btn_game_continue" xml:space="preserve">
+    <value>Continue Game</value>
+  </data>
+  <data name="btn_game_profile" xml:space="preserve">
+    <value>Profile: {0}</value>
+  </data>
+  <data name="btn_game_create" xml:space="preserve">
+    <value>Create Game</value>
+  </data>
+  <data name="btn_game_exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="btn_game_join" xml:space="preserve">
+    <value>Join Game</value>
+  </data>
+  <data name="btn_game_load" xml:space="preserve">
+    <value>Load Game</value>
+  </data>
+  <data name="btn_game_menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="btn_game_plugins" xml:space="preserve">
+    <value>Plugins</value>
+  </data>
+  <data name="btn_game_quit" xml:space="preserve">
+    <value>Quit</value>
+  </data>
+  <data name="btn_game_quit_save" xml:space="preserve">
+    <value>Quit And Save</value>
+  </data>
+  <data name="btn_game_retire_save" xml:space="preserve">
+    <value>Retire And Save</value>
+  </data>
+  <data name="btn_game_save" xml:space="preserve">
+    <value>Save Game</value>
+  </data>
+  <data name="btn_game_settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="btn_load" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="btn_nav_mainmenu" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btn_ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="btn_start_game" xml:space="preserve">
+    <value>Start Game</value>
+  </data>
+  <data name="btn_tutorial_off" xml:space="preserve">
+    <value>Tutorial Off</value>
+  </data>
+  <data name="btn_tutorial_on" xml:space="preserve">
+    <value>Tutorial On</value>
+  </data>
+  <data name="culture_imperial" xml:space="preserve">
+    <value>Imperial</value>
+  </data>
+  <data name="faction_eliminated" xml:space="preserve">
+    <value>Faction '{0}' was vanquished.</value>
+  </data>
+  <data name="faction_select" xml:space="preserve">
+    <value>Select Faction</value>
+  </data>
+  <data name="gui_eliminated" xml:space="preserve">
+    <value>Faction Eliminated</value>
+  </data>
+  <data name="join_game" xml:space="preserve">
+    <value>Join Game</value>
+  </data>
+  <data name="ncategory_battle_report" xml:space="preserve">
+    <value>Battle Report</value>
+  </data>
+  <data name="ncategory_conquest_report" xml:space="preserve">
+    <value>Conquest</value>
+  </data>
+  <data name="ncategory_faction_eliminated" xml:space="preserve">
+    <value>Faction Eliminated</value>
+  </data>
+  <data name="planet_lost" xml:space="preserve">
+    <value>'{0}' was lost to the enemy.</value>
+  </data>
+  <data name="planet_gained" xml:space="preserve">
+    <value>'{0}' was liberated from enemy clutches.</value>
+  </data>
+  <data name="planetary_type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="planetary_culture" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="planetary_loyality" xml:space="preserve">
+    <value>Loyality</value>
+  </data>
+  <data name="planetary_levy" xml:space="preserve">
+    <value>Levy</value>
+  </data>
+  <data name="planetary_fleets" xml:space="preserve">
+    <value>Fleets</value>
+  </data>
+  <data name="tt_ship_modifications" xml:space="preserve">
+    <value>Ship Modifications</value>
+  </data>
+  <data name="tt_ship_modifications_none" xml:space="preserve">
+    <value>No Modifications</value>
+  </data>
+  <data name="tt_squad_reenforced_full" xml:space="preserve">
+    <value>Squadron At Full Strength</value>
+  </data>
+  <data name="tt_squad_reenforcement_stalled" xml:space="preserve">
+    <value>Reenforcement Stalled</value>
+  </data>
+  <data name="type_aquatic" xml:space="preserve">
+    <value>Aquatic</value>
+  </data>
+  <data name="type_arid" xml:space="preserve">
+    <value>Arid</value>
+  </data>
+  <data name="type_barren" xml:space="preserve">
+    <value>Barren</value>
+  </data>
+  <data name="type_gaseous" xml:space="preserve">
+    <value>Gaseous</value>
+  </data>
+  <data name="type_primordial" xml:space="preserve">
+    <value>Primordial</value>
+  </data>
+  <data name="type_swamp" xml:space="preserve">
+    <value>Swamp</value>
+  </data>
+  <data name="type_terran" xml:space="preserve">
+    <value>Terran</value>
+  </data>
+</root>

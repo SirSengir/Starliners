@@ -1,0 +1,18 @@
+﻿[
+    {
+        "key": "starliners_alpha",
+        "name": "Starliners (Nightly)",
+        "root": "Starliners",
+        "instance": "Nightly",
+        "exe": "Starliners.exe",
+        "description": "Starliners game.\n\nUpdated continuously when changes are uploaded to the repository. Builds may break at any time."
+    },
+    {
+        "key": "starliners_extra",
+        "name": "Starliners (Extra)",
+        "root": "Starliners",
+        "instance": "Nightly",
+        "exe": "Starliners.exe",
+        "description": "Starliners game.\n\nUpdated continuously when changes are uploaded to the repository. Builds may break at any time.\n\nDownloads additional packages containing unbuilt game resources. These can be found in %appdata%\Starliners\Nightly\Extras."
+    }
+]

@@ -1,0 +1,25 @@
+﻿[
+    {
+        "name": "cruiser2-H0",
+        "icon": "cruiser0",
+        "size": "cruiser",
+        "flags": [ "legion" ],
+        "resists": {
+            "heat": 0,
+            "kinetic": 0,
+            "radiation": 0
+        },
+        "manouver": 500,
+        "tracking": 1000,
+        "weapons": {
+            "heat": 0,
+            "kinetic": 0,
+            "radioactive": 600,
+        },
+        "structure":  {
+            "armour": 6000,
+            "shield": 6000,
+            "hull": 2000
+        }
+    }
+]
