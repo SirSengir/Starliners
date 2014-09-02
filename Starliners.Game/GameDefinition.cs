@@ -122,7 +122,15 @@ namespace Starliners {
                 new string[] {
                     "Small", "Normal", "Large"
                 }
-            )
+            ),
+            new ParameterOptions (ParameterKeys.EMPIRE_LOYALITY, "empire_options",
+                new object[] {
+                    40, 60, 80, 100
+                },
+                new string[] {
+                    "Unruly", "Calm", "Steadfast", "Fierce"
+                }
+            ) { Default = 100 }
         };
 
         List<SoundDefinition> _sounds = new List<SoundDefinition> () {

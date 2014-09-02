@@ -221,7 +221,7 @@ namespace Starliners.Game.Planets {
             Size = size;
             Culture = culture;
             Population = population;
-            Loyality = LOYALITY_MAX / 5;
+            Loyality = access.GetParameter<int> (ParameterKeys.EMPIRE_LOYALITY) * LOYALITY_MAX / 100;
 
             Levy = new Levy (access, name, this);
             Access.Controller.QueueState (Levy);
@@ -334,7 +334,8 @@ namespace Starliners.Game.Planets {
             // We are loyal to our new masters.
             Loyality = LOYALITY_MAX;
 
-            // Force the levy to stand down.
+            // Reset the levy, destroying currently contained ships.
+            Levy.Reset ();
             Levy.StandDown ();
             // Destroy some improvements
             List<Improvement> destroy = new List<Improvement> ();

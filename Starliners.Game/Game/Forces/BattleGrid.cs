@@ -280,8 +280,11 @@ namespace Starliners.Game.Forces {
             int maxreenforce = 4 < available ? 4 : available;
             int reenforced = 0;
             while (_queued.Count > 0 && reenforced < maxreenforce) {
-                Push (RecruitShip (_queued.Dequeue ()));
-                reenforced++;
+                ShipInstance ship = RecruitShip (_queued.Dequeue ());
+                if (ship != null) {
+                    Push (ship);
+                    reenforced++;
+                }
             }
 
             while (reenforced < maxreenforce) {
@@ -319,7 +322,7 @@ namespace Starliners.Game.Forces {
 
         ShipInstance RecruitShip (PendingShip pending) {
             Levy levy = (Levy)Access.States.Values.Where (p => p.Serial == pending.Levy).FirstOrDefault ();
-            return levy.Ships [pending.Ship];
+            return levy.Ships.ContainsKey (pending.Ship) ? levy.Ships [pending.Ship] : null;
         }
 
         PendingShip GetPending (List<Fleet> supply, ShipSize size, ShipRole role) {

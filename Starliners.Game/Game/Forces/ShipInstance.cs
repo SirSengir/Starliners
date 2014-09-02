@@ -332,6 +332,15 @@ namespace Starliners.Game.Forces {
             Experience += experience;
         }
 
+        /// <summary>
+        /// Turns the ship into a wrecked hulk.
+        /// </summary>
+        public void Destroy () {
+            _layerShield = 0;
+            _layerArmour = 0;
+            _layerHull = 0;
+        }
+
         public void OnRemovedFromBattle (bool wasDestroyed) {
             if (wasDestroyed) {
                 _levy.OnShipLoss (this);

@@ -198,8 +198,14 @@
   <data name="setup_empire_size" xml:space="preserve">
     <value>Empire Size</value>
   </data>
-  <data name="setup_empire_size_count" xml:space="preserve">
+  <data name="setup_empire_size_help" xml:space="preserve">
     <value>Determines the amount of planets per empire.</value>
+  </data>
+  <data name="setup_empire_loyality" xml:space="preserve">
+    <value>Loyality</value>
+  </data>
+  <data name="setup_empire_loyality_help" xml:space="preserve">
+    <value>Determines the loyality in the empires at the start of the game.</value>
   </data>
   <data name="tt_save_date" xml:space="preserve">
     <value>Saved on {0}</value>

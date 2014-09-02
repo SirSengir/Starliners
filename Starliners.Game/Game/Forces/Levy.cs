@@ -194,8 +194,20 @@ namespace Starliners.Game.Forces {
         }
 
         /// <summary>
+        /// Destroys the ships in this levy, essentially resetting it.
+        /// </summary>
+        public void Reset () {
+            // Marks existing ships as destroyed, to remove them from battles.
+            foreach (var entry in _ships) {
+                entry.Value.Destroy ();
+            }
+            _ships.Clear ();
+        }
+
+        /// <summary>
         /// Disbands the levy and removes it from the game.
         /// </summary>
+        /// <remarks>Must not be called on planetary levies.</remarks>
         public void Disband () {
             StandDown ();
             IsDead = true;

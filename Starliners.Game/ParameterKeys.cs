@@ -29,6 +29,8 @@ namespace Starliners {
 
         public const string EMPIRE_COUNT = "empire.count";
         public const string EMPIRE_SIZE = "empire.size";
+        public const string EMPIRE_LOYALITY = "empire.loyality";
+        public const string EMPIRE_LEGION = "empire.legion";
     }
 }
 
