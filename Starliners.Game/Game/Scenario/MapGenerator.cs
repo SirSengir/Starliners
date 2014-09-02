@@ -65,31 +65,34 @@ namespace Starliners.Game.Scenario {
 
                 // Create the initial start fleets
                 Dictionary<int, Dictionary<ShipClass, int>> legions = new Dictionary<int, Dictionary<ShipClass, int>> ();
-                for (int i = 0; i < 1; i++) {
-                    Dictionary<ShipClass, int> legion = new Dictionary<ShipClass, int> ();
-                    legions [editor.Seed.Next (planetcount)] = legion;
-                    foreach (ShipClass sclass in ShipClass.GetClassesForWorld(editor).Where(p => p.Flags.Contains("legion"))) {
-                        int strength = 0;
-                        switch (sclass.Size) {
-                            case ShipSize.Frigate:
-                                strength = 36;
-                                break;
-                            case ShipSize.Destroyer:
-                                strength = 18;
-                                break;
-                            case ShipSize.Cruiser:
-                                strength = 9;
-                                break;
-                            case ShipSize.Battleship:
-                                strength = 4;
-                                break;
-                            case ShipSize.Dreadnought:
-                            default:
-                                strength = 1;
-                                break;
-                        }
+                float lfactor = editor.GetParameter<float> (ParameterKeys.EMPIRE_LEGION);
+                if (lfactor > 0) {
+                    for (int i = 0; i < 1; i++) {
+                        Dictionary<ShipClass, int> legion = new Dictionary<ShipClass, int> ();
+                        legions [editor.Seed.Next (planetcount)] = legion;
+                        foreach (ShipClass sclass in ShipClass.GetClassesForWorld(editor).Where(p => p.Flags.Contains("legion"))) {
+                            int strength = 0;
+                            switch (sclass.Size) {
+                                case ShipSize.Frigate:
+                                    strength = 36;
+                                    break;
+                                case ShipSize.Destroyer:
+                                    strength = 18;
+                                    break;
+                                case ShipSize.Cruiser:
+                                    strength = 9;
+                                    break;
+                                case ShipSize.Battleship:
+                                    strength = 4;
+                                    break;
+                                case ShipSize.Dreadnought:
+                                default:
+                                    strength = 1;
+                                    break;
+                            }
 
-                        legion [sclass] = strength;
+                            legion [sclass] = (int)(strength * lfactor);
+                        }
                     }
                 }
 

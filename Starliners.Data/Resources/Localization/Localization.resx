@@ -207,6 +207,12 @@
   <data name="setup_empire_loyality_help" xml:space="preserve">
     <value>Determines the loyality in the empires at the start of the game.</value>
   </data>
+  <data name="setup_empire_legion" xml:space="preserve">
+    <value>Legion</value>
+  </data>
+  <data name="setup_empire_legion_help" xml:space="preserve">
+    <value>Determines the amount of vessels still loyal to the empires at the start of the game.</value>
+  </data>
   <data name="tt_save_date" xml:space="preserve">
     <value>Saved on {0}</value>
   </data>

@@ -130,7 +130,15 @@ namespace Starliners {
                 new string[] {
                     "Unruly", "Calm", "Steadfast", "Fierce"
                 }
-            ) { Default = 100 }
+            ) { Default = 100 },
+            new ParameterOptions (ParameterKeys.EMPIRE_LEGION, "empire_options",
+                new object[] {
+                    0f, 0.4f, 0.8f, 1.2f
+                },
+                new string[] {
+                    "None", "Remnants", "Reserves", "Armada"
+                }
+            ) { Default = 1.2f }
         };
 
         List<SoundDefinition> _sounds = new List<SoundDefinition> () {
