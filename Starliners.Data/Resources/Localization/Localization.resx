@@ -138,6 +138,12 @@
   <data name="apply_changes" xml:space="preserve">
     <value>Changes will be applied!</value>
   </data>
+  <data name="ip_address" xml:space="preserve">
+    <value>IP Address</value>
+  </data>
+  <data name="ip_port" xml:space="preserve">
+    <value>Port</value>
+  </data>
   <data name="setting_fullscreen" xml:space="preserve">
     <value>Fullscreen</value>
   </data>
@@ -198,8 +204,14 @@
   <data name="menu_plugins" xml:space="preserve">
     <value>Plugins</value>
   </data>
+  <data name="msg_connection_lost" xml:space="preserve">
+    <value>Connection Lost/Failed</value>
+  </data>
   <data name="gui_exit" xml:space="preserve">
     <value>Exit Menu</value>
+  </data>
+  <data name="gui_profile" xml:space="preserve">
+    <value>Profile</value>
   </data>
   <data name="tt_close_help" xml:space="preserve">
     <value>Close</value>

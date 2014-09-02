@@ -192,4 +192,10 @@
   <data name="sclass_dreadnought1-0" xml:space="preserve">
     <value>Vagabond Dreadnought</value>
   </data>
+  <data name="sclass_destroyer2-H0" xml:space="preserve">
+    <value>Legion Destroyer</value>
+  </data>
+  <data name="sclass_cruiser2-H0" xml:space="preserve">
+    <value>Legion Cruiser</value>
+  </data>
 </root>
