@@ -161,8 +161,8 @@ namespace BLibrary {
             Message (_levels ["Error"], message);
         }
 
-        public void Network (string message) {
-            Message (_levels ["Network"], message);
+        public void Network (string message, params object[] args) {
+            Message (_levels ["Network"], message, args);
         }
 
         public void Rendering (string message, params object[] args) {

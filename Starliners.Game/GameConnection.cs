@@ -24,6 +24,7 @@ using BLibrary.Saves;
 using System.Threading;
 using System.Net;
 using Starliners.Network;
+using System.Net.NetworkInformation;
 
 namespace Starliners {
     /// <summary>
@@ -84,6 +85,15 @@ namespace Starliners {
         }
 
         EmbeddedServer () {
+
+            // Log some debug info on local ip config to track issues with resolving localhost
+            foreach (NetworkInterface netint in NetworkInterface.GetAllNetworkInterfaces()) {
+                GameAccess.Interface.GameConsole.Network ("- NetworkInterface '{0}': {1}, {2}", netint.Name, netint.Description, netint.NetworkInterfaceType);
+                foreach (UnicastIPAddressInformation info in netint.GetIPProperties().UnicastAddresses) {
+                    GameAccess.Interface.GameConsole.Network ("  = Address: " + info.Address.ToString ());
+                }
+            }
+
             IPHostEntry ipHostInfo = Dns.GetHostEntry ("localhost");
             IPAddress ipAddress = ipHostInfo.AddressList [0];
             if (ipHostInfo.AddressList.Length > 1) {
