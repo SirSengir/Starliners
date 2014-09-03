@@ -2,7 +2,11 @@
     {
         "name": "republic",
         "fullName": "Republican Coalition",
-        "fleetStyle": "Revolutionary Fleet",
+        "style": {
+            "fleet": "Revolutionary Fleet",
+            "prefix": "RSS",
+            "ships": "imperial"
+        },
         "colours": {
             "empire": "56d600",
             "hulks": "56d600",

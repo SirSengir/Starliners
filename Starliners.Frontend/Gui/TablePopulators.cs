@@ -121,7 +121,7 @@ namespace Starliners.Gui {
                     FixedTooltip = new TooltipSimple (string.Format ("{0} Level", ship.Level.ToString ()), string.Format ("Experience: {0}", ship.Experience))
                 });
                 table.NextColumn ();
-                table.AddCellContent (new ListItemText (Vect2i.ZERO, Vect2i.ZERO, string.Empty, string.Format ("{0}{1}", fcolour, Localization.Instance [ship.ShipClass.Name])) {
+                table.AddCellContent (new ListItemText (Vect2i.ZERO, Vect2i.ZERO, string.Empty, string.Format ("{0}{1}", fcolour, ship.FullName)) {
                     FixedTooltip = new TooltipShip (new DataPod<ShipInstance> (ship))
                 });
 

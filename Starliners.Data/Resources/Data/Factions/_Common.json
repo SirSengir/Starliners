@@ -1,7 +1,11 @@
 ﻿[
     {
         "name": "outer-rim",
-        "fleetStyle": "Marauders",
+        "style": {
+            "fleet": "Marauders",
+            "prefix": "FSC",
+            "ships": "imperial"
+        },
         "colours": {
             "empire": "ffbf00",
             "hulks": "ffbf00",

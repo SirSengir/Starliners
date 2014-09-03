@@ -60,6 +60,18 @@ namespace Starliners.Game {
         }
 
         [GameData (Remote = true)]
+        public string ShipPrefix {
+            get;
+            private set;
+        }
+
+        [GameData (Remote = true)]
+        public string ShipStyle {
+            get;
+            private set;
+        }
+
+        [GameData (Remote = true)]
         public string FleetIcons {
             get;
             private set;
@@ -92,7 +104,13 @@ namespace Starliners.Game {
             FullName = json.ContainsKey ("fullName") ? json ["fullName"].GetValue<string> () : "Faction";
             Colours = json.ContainsKey ("colours") ? new ColourScheme (json ["colours"].GetValue<JsonObject> ()) : new ColourScheme (Colour.LightGray, Colour.LightGray, Colour.LightGray, Colour.LightGray);
             Blazon = json.ContainsKey ("blazon") ? new Blazon (access, json ["blazon"].GetValue<JsonObject> ()) : Blazon.CreateRandom (access, BlazonShape.Shield);
-            FleetStyle = json.ContainsKey ("fleetStyle") ? json ["fleetStyle"].GetValue<string> () : "Imperial Fleet";
+
+            if (json.ContainsKey ("style")) {
+                JsonObject style = json ["style"].GetValue<JsonObject> ();
+                FleetStyle = style.ContainsKey ("fleet") ? style ["fleet"].GetValue<string> () : "Imperial Fleet";
+                ShipPrefix = style.ContainsKey ("prefix") ? style ["prefix"].GetValue<string> () : "???";
+                ShipStyle = style.ContainsKey ("ships") ? style ["ships"].GetValue<string> () : "imperial";
+            }
             FleetIcons = json.ContainsKey ("fleetIcons") ? json ["fleetIcons"].GetValue<string> () : "fleet";
 
             if (json.ContainsKey ("flags")) {

@@ -49,6 +49,12 @@ namespace Starliners.Game.Forces {
             }
         }
 
+        [GameData (Remote = true, Key = "FullName")]
+        public string FullName {
+            get;
+            private set;
+        }
+
         [GameData (Remote = true, Key = "Inception")]
         public long Inception {
             get;
@@ -170,6 +176,8 @@ namespace Starliners.Game.Forces {
 
             _levy = levy;
             ShipClass = sclass;
+
+            FullName = Eponym.GetForWorld (access).GenerateShipName (this);
 
             _layerShield = ShipClass.Shield;
             _layerArmour = ShipClass.Armour;

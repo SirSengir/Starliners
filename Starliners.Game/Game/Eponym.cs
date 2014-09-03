@@ -33,7 +33,56 @@ namespace Starliners.Game {
     [Serializable]
     sealed class Eponym : StateObject {
 
+        #region Classes & Enums
+
+        enum EponymStyle {
+            Unknown,
+            Single,
+            Composite
+        }
+
+        abstract class NameSet {
+            public abstract string GetRandomName (Random rand);
+        }
+
+        sealed class SingleNameSet : NameSet {
+
+            List<string> _main = new List<string> ();
+
+            public SingleNameSet (JsonArray arr) {
+                foreach (string name in arr.GetEnumerable<string>()) {
+                    _main.Add (name);
+                }
+            }
+
+            public override string GetRandomName (Random rand) {
+                return _main [rand.Next (_main.Count)];
+            }
+        }
+
+        sealed class CompositeNameSet : NameSet {
+            List<string> _prefix = new List<string> ();
+            List<string> _main = new List<string> ();
+
+            public CompositeNameSet (JsonArray prefix, JsonArray mains) {
+                foreach (string name in prefix.GetEnumerable<string>()) {
+                    _prefix.Add (name);
+                }
+                foreach (string name in mains.GetEnumerable<string>()) {
+                    _main.Add (name);
+                }
+            }
+
+            public override string GetRandomName (Random rand) {
+                return string.Format ("{0} {1}", _prefix [rand.Next (_prefix.Count)], _main [rand.Next (_main.Count)]);
+            }
+        }
+
+        #endregion
+
         List<string> _names = new List<string> ();
+        Dictionary<string, NameSet> _namesets = new Dictionary<string, NameSet> ();
+
         [GameData (Key = "Used")]
         Dictionary<string, int> _used = new Dictionary<string, int> ();
         [GameData (Key = "FleetCount")]
@@ -56,7 +105,23 @@ namespace Starliners.Game {
                 ReloadNames ();
             }
 
-            string name = _names [Access.Seed.Next (_names.Count)];
+            return EnsureUniqueness (_names [Access.Seed.Next (_names.Count)]);
+        }
+
+        public string GenerateFleetName (Fleet fleet) {
+            _fleetcount++;
+            return string.Format ("{0} #{1}", fleet.Backer.FleetStyle, _fleetcount.ToString ());
+        }
+
+        public string GenerateShipName (ShipInstance ship) {
+            if (_names.Count <= 0) {
+                ReloadNames ();
+            }
+
+            return string.Format ("{0} {1}", ship.Origin.Owner.ShipPrefix, EnsureUniqueness (_namesets [ship.Origin.Owner.ShipStyle].GetRandomName (Access.Rand)));
+        }
+
+        string EnsureUniqueness (string name) {
             if (_used.ContainsKey (name)) {
                 _used [name]++;
                 name = string.Format ("{0} {1}", name, StringUtils.ToRomanNumeral (_used [name]));
@@ -67,11 +132,6 @@ namespace Starliners.Game {
             return name;
         }
 
-        public string GenerateFleetName (Fleet fleet) {
-            _fleetcount++;
-            return string.Format ("{0} #{1}", fleet.Backer.FleetStyle, _fleetcount.ToString ());
-        }
-
         void ReloadNames () {
             _names.Clear ();
             foreach (ResourceFile resource in GameAccess.Resources.Search("Data.Names.Planets")) {
@@ -79,6 +139,24 @@ namespace Starliners.Game {
                     JsonNode json = JsonParser.JsonDecode (reader.ReadToEnd ());
                     foreach (string str in json.AsEnumerable<string>()) {
                         _names.Add (str);
+                    }
+                }
+            }
+
+            _namesets.Clear ();
+            foreach (ResourceFile resource in GameAccess.Resources.Search("Data.Names.Ships")) {
+                using (StreamReader reader = new StreamReader (resource.OpenRead ())) {
+                    JsonNode json = JsonParser.JsonDecode (reader.ReadToEnd ());
+                    foreach (JsonObject obj in json.AsEnumerable<JsonObject>()) {
+                        string name = obj ["name"].GetValue<string> ();
+                        EponymStyle style = obj.ContainsKey ("style") ? (EponymStyle)Enum.Parse (typeof(EponymStyle), obj ["style"].GetValue<string> (), true) : EponymStyle.Single;
+                        NameSet nset;
+                        if (style == EponymStyle.Single) {
+                            nset = new SingleNameSet (obj ["list0"].GetValue<JsonArray> ());
+                        } else {
+                            nset = new CompositeNameSet (obj ["list0"].GetValue<JsonArray> (), obj ["list1"].GetValue<JsonArray> ());
+                        }
+                        _namesets [name] = nset;
                     }
                 }
             }

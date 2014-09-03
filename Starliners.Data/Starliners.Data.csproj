@@ -52,6 +52,7 @@
     <Folder Include="Resources\Data\Ships\Combat\" />
     <Folder Include="Resources\Data\Ships\Support\" />
     <Folder Include="Resources\Data\Ships\Support\Frigates\" />
+    <Folder Include="Resources\Data\Names\Ships\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Meta\Plugin.json" />
@@ -92,5 +93,6 @@
     <EmbeddedResource Include="Resources\Data\Ships\Support\Frigates\Imperial.json" />
     <EmbeddedResource Include="Resources\Data\Ships\Combat\Cruisers\Legion.json" />
     <EmbeddedResource Include="Resources\Data\Ships\Combat\Destroyers\Legion.json" />
+    <EmbeddedResource Include="Resources\Data\Names\Ships\_Common.json" />
   </ItemGroup>
 </Project>

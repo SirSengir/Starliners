@@ -124,6 +124,18 @@ namespace Starliners.Game {
             private set;
         }
 
+        [GameData (Remote = true, Key = "ShipPrefix")]
+        public string ShipPrefix {
+            get;
+            private set;
+        }
+
+        [GameData (Remote = true, Key = "ShipStyle")]
+        public string ShipStyle {
+            get;
+            private set;
+        }
+
         [GameData (Remote = true, Key = "FleetIcons")]
         public string FleetIcons {
             get;
@@ -173,6 +185,8 @@ namespace Starliners.Game {
             Colours = preset.Colours;
             Blazon = preset.Blazon;
             FleetStyle = preset.FleetStyle;
+            ShipStyle = preset.ShipStyle;
+            ShipPrefix = preset.ShipPrefix;
             FleetIcons = preset.FleetIcons;
 
             _preset = preset;
