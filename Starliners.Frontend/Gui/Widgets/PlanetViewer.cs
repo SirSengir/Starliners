@@ -32,6 +32,8 @@ using Starliners.Game.Planets;
 namespace Starliners.Gui.Widgets {
     sealed class PlanetViewer : Widget {
 
+        static readonly Vect2i BLAZON_SIZE = new Vect2i (48, 48);
+
         IDataReference<ulong> _serial;
         IDataReference<float> _loyality;
 
@@ -51,10 +53,14 @@ namespace Starliners.Gui.Widgets {
             EntityPlanet planet = GetPlanet ();
 
             AddWidget (new Canvas (Vect2i.ZERO, Size, "starfield3"));
-            AddWidget (new IconBlazon (new Vect2i (UIProvider.MarginSmall.X, Size.Y - 64 - UIProvider.MarginSmall.Y), new Vect2i (64, 64), planet.Owner));
 
-            int pwidth = Size.X / 10;
-            Grouping info = new Grouping (new Vect2i (pwidth * 4, 0), new Vect2i (pwidth * 6, Size.Y)) { AlignmentV = Alignment.Center };
+            int measure = Size.X / 10;
+            int pwidth = 4 * measure;
+
+            AddWidget (new IconPlanet (new Vect2i ((pwidth - 32) / 2, Size.Y / 2), new Vect2i (96, 96), new DataPod<EntityPlanet> (planet)));
+            AddWidget (new IconBlazon (new Vect2i (UIProvider.MarginSmall.X, Size.Y - BLAZON_SIZE.Y - UIProvider.MarginSmall.Y), BLAZON_SIZE, planet.Owner));
+
+            Grouping info = new Grouping (new Vect2i (pwidth, 0), new Vect2i (measure * 6, Size.Y)) { AlignmentV = Alignment.Center };
             AddWidget (info);
 
             Vect2i start = Vect2i.ZERO;
@@ -69,18 +75,6 @@ namespace Starliners.Gui.Widgets {
             start += new Vect2i (0, culture.Size.Y);
             Label loyality = new Label (start, "§{0}?+b§{1}: {2}", Colour.Green.ToString ("#"), Localization.Instance ["planetary_loyality"], _loyality);
             info.AddWidget (loyality);
-        }
-
-        public override void Draw (RenderTarget target, RenderStates states) {
-            base.Draw (target, states);
-
-            EntityPlanet planet = GetPlanet ();
-            int pwidth = 4 * (Size.X / 10);
-
-            RenderStates pstates = states;
-            pstates.Transform.Translate ((pwidth - 32) / 2, Size.Y / 2);
-            pstates.Transform.Scale (0.4, 0.4);
-            RendererPlanet.Instance.DrawRenderable (target, pstates, planet);
         }
     }
 }

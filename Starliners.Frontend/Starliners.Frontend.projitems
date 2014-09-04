@@ -84,6 +84,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiChatline.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Gui\Interface\GuiProfile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Graphics\LegendPlanet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gui\Widgets\IconPlanet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Util\" />
