@@ -625,6 +625,10 @@ namespace BLibrary.Gui {
         protected virtual void Close () {
             GuiManager.Instance.CloseGui (Presets.Key);
             IsDead = true;
+            OnClosed ();
+        }
+
+        protected virtual void OnClosed () {
         }
 
         #endregion

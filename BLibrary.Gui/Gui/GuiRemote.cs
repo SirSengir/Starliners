@@ -198,6 +198,7 @@ namespace BLibrary.Gui {
 
         protected override void Close () {
             GuiManager.Instance.CloseGui (_containerId);
+            OnClosed ();
         }
 
         protected override void OnCompactChange () {

@@ -67,7 +67,7 @@ namespace Starliners.Gui.Interface {
             switch (key) {
                 case BUTTON_CONFIRM:
                     // No op if no valid profile name was given.
-                    if (StringUtils.ConsistsOfOnlyNumbersAndLetters (_input.Entered) && _input.Entered.Length < 24) {
+                    if (!StringUtils.ConsistsOfOnlyNumbersAndLetters (_input.Entered) || _input.Entered.Length > 24) {
                         // TODO: Complain about it.
                         return true;
                     }
@@ -79,11 +79,14 @@ namespace Starliners.Gui.Interface {
 
                     // Return to main menu.
                     Close ();
-                    GameAccess.Interface.OpenMainMenu ();
                     return true;
                 default:
                     return base.DoAction (key, args);
             }
+        }
+
+        protected override void OnClosed () {
+            GameAccess.Interface.OpenMainMenu ();
         }
     }
 }

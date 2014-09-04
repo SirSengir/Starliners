@@ -48,13 +48,15 @@ namespace Starliners.Gui.Widgets {
         protected override void Regenerate () {
             base.Regenerate ();
 
+            EntityPlanet planet = GetPlanet ();
+
             AddWidget (new Canvas (Vect2i.ZERO, Size, "starfield3"));
+            AddWidget (new IconBlazon (new Vect2i (UIProvider.MarginSmall.X, Size.Y - 64 - UIProvider.MarginSmall.Y), new Vect2i (64, 64), planet.Owner));
 
             int pwidth = Size.X / 10;
             Grouping info = new Grouping (new Vect2i (pwidth * 4, 0), new Vect2i (pwidth * 6, Size.Y)) { AlignmentV = Alignment.Center };
             AddWidget (info);
 
-            EntityPlanet planet = GetPlanet ();
             Vect2i start = Vect2i.ZERO;
 
             Label type = new Label (start, string.Format ("§{0}?+b§{1}: {2}", Colour.Amber.ToString ("#"), Localization.Instance ["planetary_type"], Localization.Instance [string.Format ("type_{0}", planet.PlanetData.Type.ToString ().ToLowerInvariant ())]));
