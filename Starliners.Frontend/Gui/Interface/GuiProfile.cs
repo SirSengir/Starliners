@@ -68,6 +68,8 @@ namespace Starliners.Gui.Interface {
                 case BUTTON_CONFIRM:
                     if (!string.IsNullOrEmpty (_input.Entered)) {
                         Globals.Login = _input.Entered;
+                        GameAccess.Settings.Set ("profile", "login", Globals.Login);
+                        GameAccess.Settings.Flush ();
                     }
                     Close ();
                     GameAccess.Interface.OpenMainMenu ();

@@ -21,8 +21,10 @@
 ﻿
 namespace BLibrary {
     public static class Globals {
+        public const string LOGIN_ANON = "anon";
+
         public static string InstancePath = LibraryConstants.PATH_INSTANCE_DEFAULT;
-        public static string Login = "ThePlayer";
+        public static string Login = LOGIN_ANON;
         public static string SessionID = string.Empty;
     }
 }

@@ -41,13 +41,14 @@ namespace Starliners {
             GameAccess.CrashReporter = new CrashReporter ();
 
             SetFromArgs (args);
-
             InitDirectories ();
-            Localization.Instance = new Localization ();
 
+            Localization.Instance = new Localization ();
             GameAccess.Game = new GameDefinition ();
             GameAccess.Settings = new SettingsManager ("Settings.json");
             GameAccess.Resources = new ResourceRepository ();
+
+            SetLogin ();
 
             GameAccess.Simulator = new GameSimulator (new ContainerCreator (), new ActionHandler ());
             GameAccess.Interface = new GameInterface (new InterfaceDefinition (), new GuiCreator ());
@@ -94,6 +95,20 @@ namespace Starliners {
                         continue;
                 }
             }
+        }
+
+        static void SetLogin () {
+            // Logins set from the command line override those in settings.
+            if (!string.IsNullOrWhiteSpace (Globals.Login) && !string.Equals (Globals.Login, Globals.LOGIN_ANON)) {
+                if (!string.Equals (GameAccess.Settings.Get<string> ("profile", "login"), Globals.Login)) {
+                    GameAccess.Settings.Set ("profile", "login", Globals.Login);
+                    GameAccess.Settings.Flush ();
+                }
+                return;
+            }
+
+            string login = GameAccess.Settings.Get<string> ("profile", "login");
+            Globals.Login = !string.IsNullOrWhiteSpace (login) ? login : Globals.LOGIN_ANON;
         }
 
         static void OnUnhandledException (object sender, UnhandledExceptionEventArgs e) {

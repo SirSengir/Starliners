@@ -41,6 +41,11 @@ namespace Starliners {
                 return;
 
             string defaultsettings = @"{
+    ""profile"": [
+        {
+            ""login"": ""ThePlayer""
+        }
+    ],
     ""video"": [
         {
             ""key"": ""mode"",
