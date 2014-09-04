@@ -21,6 +21,8 @@
 ﻿using System;
 using System.Text;
 using BLibrary.Resources;
+using System.Text.RegularExpressions;
+using System.Linq;
 
 namespace BLibrary.Util {
 
@@ -103,6 +105,15 @@ namespace BLibrary.Util {
 
         public static string FormatModificationInfo (string unlocalized, float value) {
             return string.Format (Localization.Instance [unlocalized, string.Format (MOD_PERCENT, value)]);
+        }
+
+        /// <summary>
+        /// Determines whether the given string consists only of numbers and letters.
+        /// </summary>
+        /// <returns><c>true</c>, if the string consisted only of numbers and letters, <c>false</c> otherwise.</returns>
+        /// <param name="input">Input.</param>
+        public static bool ConsistsOfOnlyNumbersAndLetters (string input) {
+            return input.All (Char.IsLetterOrDigit);
         }
     }
 }

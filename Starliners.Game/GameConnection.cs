@@ -25,6 +25,7 @@ using System.Threading;
 using System.Net;
 using Starliners.Network;
 using System.Net.NetworkInformation;
+using System.Linq;
 
 namespace Starliners {
     /// <summary>
@@ -94,11 +95,28 @@ namespace Starliners {
                 }
             }
 
-            IPHostEntry ipHostInfo = Dns.GetHostEntry ("localhost");
-            IPAddress ipAddress = ipHostInfo.AddressList [0];
-            if (ipHostInfo.AddressList.Length > 1) {
-                ipAddress = ipHostInfo.AddressList [1];
+            // Prefer IPv4 addresses
+            IPAddress ipAddress = null;
+            foreach (NetworkInterface netint in NetworkInterface.GetAllNetworkInterfaces().Where(p => p.NetworkInterfaceType == NetworkInterfaceType.Loopback)) {
+                UnicastIPAddressInformation info = netint.GetIPProperties ().UnicastAddresses.Where (p => p.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork).FirstOrDefault ();
+                if (info == null) {
+                    continue;
+                }
+
+                ipAddress = info.Address;
+                GameAccess.Interface.GameConsole.Network ("Found IPv4 address {0} for loopback device '{1}'.", ipAddress, netint.Name);
+                break;
             }
+
+            // Fall back on the host information if we couldn't get an IPv4 address.
+            if (ipAddress == null) {
+                IPHostEntry ipHostInfo = Dns.GetHostEntry ("localhost");
+                ipAddress = ipHostInfo.AddressList [0];
+                if (ipHostInfo.AddressList.Length > 1) {
+                    ipAddress = ipHostInfo.AddressList [1];
+                }
+            }
+                
             _endpoint = new IPEndPoint (ipAddress, 11000);
         }
 

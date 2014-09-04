@@ -66,11 +66,18 @@ namespace Starliners.Gui.Interface {
         public override bool DoAction (string key, params object[] args) {
             switch (key) {
                 case BUTTON_CONFIRM:
-                    if (!string.IsNullOrEmpty (_input.Entered)) {
-                        Globals.Login = _input.Entered;
-                        GameAccess.Settings.Set ("profile", "login", Globals.Login);
-                        GameAccess.Settings.Flush ();
+                    // No op if no valid profile name was given.
+                    if (StringUtils.ConsistsOfOnlyNumbersAndLetters (_input.Entered) && _input.Entered.Length < 24) {
+                        // TODO: Complain about it.
+                        return true;
                     }
+
+                    // Set the new profile login.
+                    Globals.Login = !string.IsNullOrEmpty (_input.Entered) ? _input.Entered : Globals.LOGIN_ANON;
+                    GameAccess.Settings.Set ("profile", "login", Globals.Login);
+                    GameAccess.Settings.Flush ();
+
+                    // Return to main menu.
                     Close ();
                     GameAccess.Interface.OpenMainMenu ();
                     return true;
